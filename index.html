@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <header class="header_wrapper">
+        <div class="container">
+            <div class="header_row">
+                <div class="header_left_colm">
+                    <a href="#" class="logo_link">
+                        <img src="assets/images/logo.png" width="100" height="100" class="logo_image">
+                        <img src="assets/images/logo_white.png" width="100" height="100" class="logo_image_white">
+                    </a>
+                </div>
+                <div class="header_right_colm">
+                    <div class="header_search_wrapper">
+                        <div class="header_search_box">
+                            <form action="">
+                                <input type="text" placeholder="Search">
+                                <div class="search_icon_header">
+                                <!-- <img src="assets/images/icon/search-icon.png" alt="image" width="20" height="20"> -->
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1_70)">
+                                        <path d="M15.1367 9.27734C14.8672 9.27734 14.6484 9.49609 14.6484 9.76562C14.6484 10.0352 14.8672 10.2539 15.1367 10.2539C15.4062 10.2539 15.625 10.0352 15.625 9.76562C15.625 9.49609 15.4062 9.27734 15.1367 9.27734Z" fill="black"/>
+                                        <path d="M24.4278 21.666L17.9102 15.1484C18.972 13.5491 19.5312 11.697 19.5312 9.76562C19.5312 4.38086 15.1504 0 9.76562 0C4.38086 0 0 4.38086 0 9.76562C0 15.1504 4.38086 19.5312 9.76562 19.5312C11.6971 19.5312 13.5491 18.9719 15.1484 17.9103L16.9499 19.7118C16.9501 19.712 16.9504 19.7123 16.9507 19.7125L21.6659 24.4278C22.035 24.7968 22.5253 25 23.0469 25C23.5684 25 24.0588 24.7968 24.4276 24.4279C24.7967 24.0591 25 23.5687 25 23.0469C25 22.525 24.7967 22.0346 24.4278 21.666ZM14.9188 16.8812L14.9187 16.8813C13.4115 17.976 11.6296 18.5547 9.76562 18.5547C4.91934 18.5547 0.976562 14.6119 0.976562 9.76562C0.976562 4.91934 4.91934 0.976562 9.76562 0.976562C14.6119 0.976562 18.5547 4.91934 18.5547 9.76562C18.5547 11.6296 17.976 13.4115 16.8813 14.9187C16.3335 15.6732 15.6733 16.3335 14.9188 16.8812ZM15.9432 17.3239C16.4485 16.9104 16.9105 16.4485 17.3239 15.9432L18.7092 17.3285C18.2879 17.8257 17.8257 18.2879 17.3285 18.7092L15.9432 17.3239ZM23.7373 23.7373C23.5527 23.9218 23.3075 24.0234 23.0469 24.0234C22.7862 24.0234 22.5411 23.9218 22.3565 23.7373L18.0208 19.4016C18.5153 18.9772 18.9772 18.5153 19.4015 18.0208L23.7374 22.3567C23.9218 22.541 24.0234 22.786 24.0234 23.0469C24.0234 23.3077 23.9218 23.5528 23.7373 23.7373Z" fill="black"/>
+                                        <path d="M9.76562 1.95312C5.45776 1.95312 1.95312 5.45776 1.95312 9.76562C1.95312 14.0735 5.45776 17.5781 9.76562 17.5781C14.0735 17.5781 17.5781 14.0735 17.5781 9.76562C17.5781 5.45776 14.0735 1.95312 9.76562 1.95312ZM9.76562 16.6016C5.99629 16.6016 2.92969 13.535 2.92969 9.76562C2.92969 5.99629 5.99629 2.92969 9.76562 2.92969C13.535 2.92969 16.6016 5.99629 16.6016 9.76562C16.6016 13.535 13.535 16.6016 9.76562 16.6016Z" fill="black"/>
+                                        <path d="M15.2375 7.66958C14.8171 6.57524 14.085 5.6396 13.1204 4.96387C12.1328 4.27197 10.9727 3.90625 9.76562 3.90625C9.496 3.90625 9.27734 4.1249 9.27734 4.39453C9.27734 4.66416 9.496 4.88281 9.76562 4.88281C11.7724 4.88281 13.605 6.14346 14.326 8.01987C14.4006 8.21401 14.5856 8.33315 14.7819 8.33315C14.8401 8.33315 14.8993 8.32266 14.9569 8.30054C15.2086 8.20381 15.3343 7.92134 15.2375 7.66958Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1_70">
+                                        <rect width="25" height="25" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="menu_toggle_btn">
+                        <svg class="menuIcon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9987 16L26.6654 16M9.9987 8H26.6654M5.33203 24H26.6654" stroke="#f17b40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <svg class="menu_close_icon" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#f17b40"/>
+                        </svg>
+                    </div>
+                    <div class="header_nav">
+                        <ul class="header_nav_list_wrapper">
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">SOLUTIONS</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">PRODUCTS & SERVICES</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">INVESTORS</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">THEMES</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">INDUSTRIES</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">ABOUT US</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">RESOURCES</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">NEWSROOM</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor common_btn_subex">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+   <section class="native_ai_partner">
+    <img src="assets/images/homepage/AI-Native-bg.png" alt="image" width="1440" height="900" class="native_ai_partner_bg">
+      <div class="container">
+           <div class="native_ai_partner_content_card">
+              <h1 class="subex_title_common wow fadeInUp" data-wow-duration="1500ms">Your AI-Native Partner </h1>
+              <div class="subex_desc_title wow fadeInUp" data-wow-duration="1700ms">For the Intent-Driven World.</div>
+              <div class="subex_desc">The world is moving from data to intent. Users no longer search; they express what they want and expect instant outcomes. Subex transforms telecom operations to anticipate these needs, orchestrate
+               resources, and deliver perfect experiences seamlessly. </div>
+                <div class="native_ai_btn_box wow fadeInUp" data-wow-duration="1700ms">
+                    <a href="#" class="link_cursor common_btn_subex">Become Intent-Driven</a>
+                </div>
+           </div>
+
+           <div class="native_ai_bottom_wrapper">
+                <div class="native_ai_bottom_row wow fadeInUp" data-wow-duration="1500ms">
+                    <div class="native_ai_card">
+                        <div class="native_ai_icon">
+                            <img src="assets/images/icon/global-deployments.svg" alt="icon" width="60" height="60">
+                        </div>
+                        <div class="native_ai_content_card">
+                            <div class="native_ai_title_content">300+ <br> Global <br> Deployments</div>
+                        </div>
+                    </div>
+                    <div class="native_ai_card">
+                        <div class="native_ai_icon">
+                            <img src="assets/images/icon/counteries.svg" alt="icon" width="60" height="60">
+                        </div>
+                        <div class="native_ai_content_card">
+                            <div class="native_ai_title_content">90+ <br> Countries <br> 6 Continents</div>
+                        </div>
+                    </div>
+                    <div class="native_ai_card">
+                        <div class="native_ai_icon">
+                            <img src="assets/images/icon/ai-models.svg" alt="icon" width="60" height="60">
+                        </div>
+                        <div class="native_ai_content_card">
+                            <div class="native_ai_title_content">25+ Patents <br> 200+ AI Models <br> 30 Years of Innovation </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+      </div>
+   </section>
+
+  
+    <section class="global_shift">
+        <img src="assets/images/homepage/global_shift_bg.jpg" alt="image" width="1440" height="900" class="global_shift_bg">
+
+        <div class="global_shift_content_wrapper">
+        <div class="container">
+            
+                <div class="global_shift_title_box">
+                    <div class="anim_parrent_each">
+                        <div class="anim_parrent_selector_each">
+                            <div class="anim_selector subex_title_common text_white wow fadeInUp" data-wow-duration="1500ms">The Global Shift </div>
+                        </div>
+                    </div>
+                    <div class="anim_parrent_each">
+                        <div class="anim_parrent_selector_each">
+                            <div class="anim_selector subex_desc_title wow fadeInUp" data-wow-duration="1500ms">The Rules Have Changed <br> And We’re Helping Telcos Rewrite Them </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="global_shift_row">
+                    <div class="global_shift_colm">
+                        <div class="global_shift_inner_colm">
+                            <div class="anim_parrent_each">
+                                <div class="anim_parrent_selector_each">
+                                    <div class="anim_selector global_shift_inner_title">Reactive is no longer enough</div>
+                                </div>
+                            </div>
+                            <div class="anim_parrent_each">
+                                <div class="anim_parrent_selector_each">
+                                    <div class="anim_selector global_shift_desc">Telcos still detect gaming lag after user complaints and identify fraud 
+                                        after revenue loss. Systems react to data instead of anticipating it.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="global_shift_colm">
+                        <div class="global_shift_inner_colm">
+                            <div class="anim_parrent_each">
+                                <div class="anim_parrent_selector_each">
+                                    <div class="anim_selector global_shift_inner_title">Intent-driven Networks</div>
+                                </div>
+                            </div>
+                            <div class="anim_parrent_each">
+                                <div class="anim_parrent_selector_each">
+                                    <div class="anim_selector global_shift_desc">Networks that self-tune latency the moment a gamer says, “Let’s play.” Service assurance that adjusts 
+                                    bandwidth on demand.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="global_shift_colm">
+                        <div class="global_shift_inner_colm">
+                            <div class="anim_parrent_each">
+                                <div class="anim_parrent_selector_each">
+                                    <div class="anim_selector global_shift_inner_title">AI That Thinks Ahead</div>
+                                </div>
+                            </div>
+                            <div class="anim_parrent_each">
+                                <div class="anim_parrent_selector_each">
+                                    <div class="anim_selector global_shift_desc">Subex’s AI turns reaction into 
+                                prediction, detecting unknown fraud patterns, adjusting SLAs 
+                                dynamically, and simplifying
+                                complexity.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="global_shift_bottom_content">
+                    <p>Empowering Telcos to Move from Process-Deep to Purpose-Deep Automation.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+   
+
+
+   <section class="expectations common_gap">
+        <div class="container">
+            <div class="content_wrapper_expectations">
+                <div class=" subex_title_common wow fadeInUp" data-wow-duration="1500ms">Intent-Driven Expectations </div>
+                <div class="subex_desc_title common_desc wow fadeInUp" data-wow-duration="1500ms">Subex enables networks that understand and act Instantly.</div>
+
+                <div class="expectations_card wow fadeInUp" data-wow-duration="1500ms">
+                    <div class="expectations_icon">
+                        <img src="assets/images/icon/thinking.svg" alt="icon" width="70" height="70">
+                    </div>
+                    <div class="expectations_card_content">
+                        <div class="expectations_card_inner_title">Experience-First Thinking</div>
+                        <div class="expectations_card_quate_text">“I want to play a game.”</div>
+                        <div class="expectations_card_desc">PLAY. WITHOUT DELAY.</div>
+                        <div class="expectations_card_desc2">The network should self-tune latency ,delivering seamless,  real-time responsiveness that keeps every experience flawless.</div>
+                    </div>
+                </div>
+
+                <div class="expectations_card wow fadeInUp" data-wow-duration="1500ms">
+                    <div class="expectations_icon">
+                        <img src="assets/images/icon/multitasking.svg" alt="icon" width="70" height="70">
+                    </div>
+                    <div class="expectations_card_content">
+                        <div class="expectations_card_inner_title">Proactive Intelligence</div>
+                        <div class="expectations_card_quate_text">“Something suspicious just happened.”</div>
+                        <div class="expectations_card_desc">PROTECT. BEFORE IMPACT.</div>
+                        <div class="expectations_card_desc2">AI-driven intelligence blocks threats before they impact revenue, 
+`                           ensuring trust stays intact at every touchpoint.</div>
+                    </div>
+                </div>
+
+                <div class="expectations_card wow fadeInUp" data-wow-duration="1500ms">
+                    <div class="expectations_icon">
+                        <img src="assets/images/icon/personal-assistant.svg" alt="icon" width="70" height="70">
+                    </div>
+                    <div class="expectations_card_content">
+                        <div class="expectations_card_inner_title">Outcome-Driven Future</div>
+                        <div class="expectations_card_quate_text">“We need guaranteed bandwidth now.”</div>
+                        <div class="expectations_card_desc">DELIVER. INSTANTLY.</div>
+                        <div class="expectations_card_desc2">Enterprise bandwidth is provisioned instantly.
+                            Zero lag, zero loss, total reliability.</div>
+                    </div>
+                </div>
+
+                <img src="assets/images/homepage/logo_bg.png" alt="icon" width="400" height="400" class="expectations_bg">
+
+            </div>
+        </div>
+   </section>
+
+    <div class="white_bg_section">
+        <section class="common_gap subex_role">
+            <img src="assets/images/homepage/logo_bg_2.png" alt="image" width="400" height="400" class="subex_role_bg">
+            <div class="container">
+                    <div class="subex_role_row">
+                        <div class="subex_role_colm">
+                                <div class="subex_role_card wow fadeInUp" data-wow-duration="1500ms">
+                                    <div class="subex_role_card_title">AI-Driven Assurance</div>
+                                    <div class="subex_role_card_desc">Anticipate and prevent risks with predictive, self-learning systems that protect
+                                        every transaction and experience.</div>
+                                </div>
+
+                                <div class="subex_role_card wow fadeInUp" data-wow-duration="1500ms">
+                                    <div class="subex_role_card_title">Autonomous Agents</div>
+                                    <div class="subex_role_card_desc">AI agents that work silently in the background, keeping operations
+                                        running with speed, accuracy, and intelligence.</div>
+                                </div>
+
+                                <div class="subex_role_card wow fadeInUp" data-wow-duration="1500ms">
+                                    <div class="subex_role_card_title">Self-Healing Networks</div>
+                                    <div class="subex_role_card_desc">Self-learning, self-evolving systems that detect, adapt, and recover in 
+                                        real-time to ensure continuous reliability.</div>
+                                </div>
+
+                                <div class="subex_role_card wow fadeInUp" data-wow-duration="1500ms">
+                                    <div class="subex_role_card_title">Experience Intelligence</div>
+                                    <div class="subex_role_card_desc">Turning connectivity into experience, helping telcos evolve into
+                                        intent-driven experience companies.</div>
+                                </div>
+                        </div>
+                        <div class="subex_role_colm">
+                            <div class="subex_role_title_colm wow fadeInUp" data-wow-duration="1500ms">
+                                <div class=" subex_title_common text_white">The Subex Role</div>
+                                <div class="subex_desc_title common_desc text_white">Your Partner in the Intent-Driven Era</div>
+                                <div class="subex_role_desc_box">
+                                    <p>Subex empowers telecom operators to  safeguard and scale profitability while preparing for an intent-driven world.</p>
+                                    <p>Our AI, GenAI, and autonomous agent ecosystem make every digital journey fearless, seamless, and fraud-free.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </div>
+
+
+   <section class="common_gap our_solutions">
+      <div class="container">
+        <div class="our_solution_title_box">
+            <div class=" subex_title_common wow fadeInUp" data-wow-duration="1500ms">Our Solutions</div>
+            <div class="subex_desc_title common_des wow fadeInUp" data-wow-duration="1500ms">AI-powered solutions built for intent-driven networks <br> Designed to predict, prevent, and perform.</div>
+        </div>
+
+        <div class="tab_wrapper">
+            <div class="tab-menu-list wow fadeInUp" data-wow-duration="1500ms">
+                <ul>
+                    <li><span class="active" data-rel="tab1">Fraud <br> Management</span></li>
+                    <li><span data-rel="tab2" class="">Revenue <br> Assurance</span></li>
+                    <li><span data-rel="tab3" class="">Partner Ecosystem <br> Management</span></li>
+                    <li><span data-rel="tab4" class="">Business & <br> Support Services</span></li>
+                </ul>
+            </div>
+
+            <div class="tab-wraper-box">
+                <div class="tab-output-box" id="tab1" style="display:block;">
+                   <div class="tab_solution_row">
+                      <div class="tab_solution_colm">
+                        <div class="tab_solution_content">
+                            <p>Anticipate fraudulent intent and prevent revenue loss with AI-powered intelligence.</p>
+                            <p>Our systems detect known and unknown fraud patterns in real time, safeguarding every digital journey. </p>
+                        </div>
+                      </div>
+                      <div class="tab_solution_colm">
+                        <div class="tab_solution_right_content">
+                            <img src="assets/images/homepage/tab_solution_bg.png" alt="image" width="200" height="200" class="tab_solution_bg">
+                             <div class="tab_right_inner_box">
+                                <div class="tab_solution_inner_box">
+                                    <div class="tab_solution_icon">
+                                        <img src="assets/images/icon/fraud_managment.svg" alt="icon" width="20" height="20">
+                                    </div>
+                                    <div class="tab_solution_title_right">AI-Powered <br> Intelligence</div>
+                                </div>
+                                    <div class="tab_solution_title_bottom_right text-wgite">Stopping revenue loss efore it starts.</div>
+                             </div>
+                            
+                        </div>
+                      </div>
+                   </div>
+                </div>
+
+                <div class="tab-output-box" id="tab2">
+                    <div class="tab_solution_row">
+                      <div class="tab_solution_colm">
+                        <div class="tab_solution_content">
+                            <p>Ensure the intent of every revenue stream is fulfilled by eliminating leakage and enabling real-time assurance across the value chain. </p>
+                        </div>
+                      </div>
+                      <div class="tab_solution_colm">
+                        <div class="tab_solution_right_content">
+                            <img src="assets/images/homepage/tab_solution_bg.png" alt="image" width="200" height="200" class="tab_solution_bg">
+                             <div class="tab_right_inner_box">
+                                <div class="tab_solution_inner_box">
+                                    <div class="tab_solution_icon">
+                                        <img src="assets/images/icon/visibility.svg" alt="icon" width="20" height="20">
+                                    </div>
+                                    <div class="tab_solution_title_right">Real-Time <br> Visibility</div>
+                                </div>
+                                    <div class="tab_solution_title_bottom_right text-wgite">Every dollar accounted for every moment.</div>
+                             </div>
+                            
+                        </div>
+                      </div>
+                   </div>
+                </div>
+
+
+                <div class="tab-output-box" id="tab3">
+                    <div class="tab_solution_row">
+                      <div class="tab_solution_colm">
+                        <div class="tab_solution_content">
+                            <p>Empower every partnership with transparent, accurate, and instantaneous settlements for multi-party ecosystems.</p>
+                        </div>
+                      </div>
+                      <div class="tab_solution_colm">
+                        <div class="tab_solution_right_content">
+                            <img src="assets/images/homepage/tab_solution_bg.png" alt="image" width="200" height="200" class="tab_solution_bg">
+                             <div class="tab_right_inner_box">
+                                <div class="tab_solution_inner_box">
+                                    <div class="tab_solution_icon">
+                                        <img src="assets/images/icon/hand.svg" alt="icon" width="20" height="20">
+                                    </div>
+                                    <div class="tab_solution_title_right">Frictionless <br> Collaboration.</div>
+                                </div>
+                                    <div class="tab_solution_title_bottom_right text-wgite">Transparency that builds long-term trust.</div>
+                             </div>
+                            
+                        </div>
+                      </div>
+                   </div>
+                </div>
+
+                <div class="tab-output-box" id="tab4">
+                    <div class="tab_solution_row">
+                      <div class="tab_solution_colm">
+                        <div class="tab_solution_content">
+                            <p>Align your strategic intent with actionable outcomes through Subex’s deep-domain expertise and AI-powered consulting services.</p>
+                        </div>
+                      </div>
+                      <div class="tab_solution_colm">
+                        <div class="tab_solution_right_content">
+                            <img src="assets/images/homepage/tab_solution_bg.png" alt="image" width="200" height="200" class="tab_solution_bg">
+                             <div class="tab_right_inner_box">
+                                <div class="tab_solution_inner_box">
+                                    <div class="tab_solution_icon">
+                                        <img src="assets/images/icon/fraud_managment.svg" alt="icon" width="20" height="20">
+                                    </div>
+                                    <div class="tab_solution_title_right">Intelligence <br> That Delivers.</div>
+                                </div>
+                                    <div class="tab_solution_title_bottom_right text-wgite">Strategy meets execution flawlessly.</div>
+                             </div>
+                            
+                        </div>
+                      </div>
+                   </div>
+                </div>
+		   </div>
+        </div>
+
+      </div>
+   </section>
+
+   <section class="trusted_power">
+       <div class="container">
+            <div class="trusted_power_row">
+                <div class="trusted_power_colm">
+                    <div class="trusted_power_inner_card">
+                        <div class="trusted_power_icon">
+                            <img src="assets/images/icon/trusted_power.png" alt="image" width="100" height="100">
+                        </div>
+                        <div class="trusted_card_content">
+                            <div class="trusted_power_title">Trusted to Power <br> The Intent-Driven Future </div>
+                        </div>
+                    </div>
+                </div>
+                    
+
+                    <div class="trusted_power_colm">
+                        <div class="trusted_power_inner_card">
+                            <div class="trusted_power_icon">
+                                <img src="assets/images/icon/inovation.svg" alt="image" width="100" height="100">
+                            </div>
+                            <div class="trusted_card_content">
+                                <div class="trusted_card_count" data-count="30">0</div>
+                                <div class="trusted_power_title">Years Of  <span>Innovation</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trusted_power_colm">
+                        <div class="trusted_power_inner_card">
+                            <div class="trusted_power_icon">
+                                <img src="assets/images/icon/countries.svg" alt="image" width="100" height="100">
+                            </div>
+                            <div class="trusted_card_content">
+                                <div class="trusted_card_count" data-count="100">0</div>
+                                <div class="trusted_power_title"> <span>Countries</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trusted_power_colm">
+                        <div class="trusted_power_inner_card">
+                            <div class="trusted_power_icon">
+                                <img src="assets/images/icon/developments.svg" alt="image" width="100" height="100">
+                            </div>
+                            <div class="trusted_card_content">
+                                <div class="trusted_card_count" data-count="300">0</div>
+                                <div class="trusted_power_title"> <span>Deployments</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="trusted_power_colm">
+                        <div class="trusted_power_inner_card">
+                            <div class="trusted_power_icon">
+                                <img src="assets/images/icon/ai-models1.svg" alt="image" width="100" height="100">
+                            </div>
+                            <div class="trusted_card_content">
+                                <div class="trusted_card_count" data-count="200">0</div>
+                                <div class="trusted_power_title"> <span>AI Models</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+   </section>
+
+
+   <section class="common_gap trust_network ">
+    <img src="assets/images/homepage/map_image.jpg" alt="image" width="1440" height="900" class="map_image_trust">
+      <div class="container">
+            <div class="trust_network_row">
+                <div class="trust_network_colm_left">
+                    <div class="trust_network_content">
+                        <div class="trust_network_title wow fadeInUp" data-wow-duration="1500ms">Our Global Trust Network</div>
+                        <div class="trust_network_desc">
+                            <p>From emerging digital disruptors to the world’s largest telecom operators, Subex has been the silent force powering trust,
+                                intelligence, and innovation across every continent.</p>
+                                <p>Our customers span 90+ countries, shaping connected experiences for over a billion subscribers, each trusting Subex to safeguard, 
+                                    optimize, and accelerate their digital transformation.</p>
+                                <p>Their success stories define ours.</p>
+                                <p>Together, we make new possibilities, now possible.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trust_network_colm_right">
+                    <img src="assets/images/homepage/map_image.jpg" alt="image" width="1440" height="900" class="map_image_trust">
+                        <div class="trusted_logo_wrapper">
+                            <div class="trusted_logo_colm">
+                                <div class="trusted_logo_slider">
+                                    <div class="marquee_trusted">
+                                            <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo1.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo2.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo3.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo4.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo5.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo6.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo1.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo2.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                       <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo3.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                            <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo4.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                            <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo5.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                            <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo6.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                    </div>
+                                    </div>
+                            </div>
+
+                            <div class="trusted_logo_colm">
+                                <div class="trusted_logo_slider">
+                                    <div class="marquee_trusted2">
+                                            <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo7.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo8.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo9.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo10.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo2.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo8.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo1.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                        <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo7.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                       <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo9.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                            <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo8.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                            <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo6.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                            <div class="trusted_logo_card">
+                                                <a href="#" class="trusted_logo_link">
+                                                    <img src="assets/images/homepage/logo10.png" alt="image" width="100" height="100" class="trusted_logo_image">
+                                                </a>
+                                            </div>
+                                    </div>
+                                    </div>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+      </div>
+   </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer_row">
+                <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <div class="footer_title wow fadeInUp" data-wow-duration="1500ms">CAPABILITIES</div>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">AI-Powered Fraud Management</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Business Assurance & Revenue Integrity</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Partner Ecosystem Management</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Enterprise Asset Intelligence</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Network & OT Security</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <div class="footer_title wow fadeInUp" data-wow-duration="1500ms">SOLUTIONS</div>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">HyperSense AI Platform</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">AI Agents</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Consulting & Advisory</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Managed Services</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Cloud & DataOps Transformation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <div class="footer_title wow fadeInUp" data-wow-duration="1500ms">INDUSTRIES</div>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Telecom Operators</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Enterprises</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">IoT & Smart Cities</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Cloud & Edge Providers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <div class="footer_title wow fadeInUp" data-wow-duration="1500ms">INSIGHTS</div>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Blogs & White Papers</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Case Studies</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Webinars & Events</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Fraud Alerts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <div class="footer_title wow fadeInUp" data-wow-duration="1500ms">ABOUT</div>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">About Subex</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Leadership</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Partners</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">CONTACT</a>
+                            </li>
+                            <li class=" footer_item">
+                                <a href="#" class="footer_link">CAREERS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="assets/images/footer_logo.png" alt="image" width="400" height="200">
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+    <svg class="dot" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true" viewBox="0 0 30 30">
+        <circle r="5" cx="15" cy="15"/>
+    </svg>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/infiniteslidev2.js"></script>
+<script src="assets/js/custom.js"></script> 
+</body>
+</html>
