@@ -22,46 +22,48 @@ $(document).ready(function(){
         $("body").toggleClass("overflow_hidden");
     });
 
+    // $('.expectations_card').eq(1).addClass('active');
+      $('.expectations_card').on('mouseenter', function() {
+      $(this).addClass('active')
+            .siblings('.expectations_card').removeClass('active');
+    });
+
+     $('.native_ai_card').eq(1).addClass('active');
+    $('.native_ai_card').on('mouseenter', function() {
+        var $this = $(this);
+        $this.addClass('active').siblings('.native_ai_card').removeClass('active active2');
+        clearTimeout($this.data('timeoutId'));
+        var timeoutId = setTimeout(function() {
+            $this.addClass('active2');
+        }, 800);
+        $this.data('timeoutId', timeoutId);
+    });
+
+    $('.native_ai_card').on('mouseleave', function() {
+        var $this = $(this);
+        clearTimeout($this.data('timeoutId'));
+        $this.removeClass('active2');
+    });
+
+
+    
+
+
+
+   document.addEventListener("mousemove", (e) => {
+  const trail = document.createElement("div");
+  trail.className = "trail";
+  document.body.appendChild(trail);
+
+  trail.style.left = `${e.pageX}px`;
+  trail.style.top = `${e.pageY}px`;
+
+  setTimeout(() => {
+    trail.remove();
+  }, 800); // Remove after animation
+});
+
 gsap.registerPlugin(ScrollTrigger);
-
- (function() {
-    const dot = document.querySelector(".dot");
-    const circle = document.querySelector(".dot circle");
-    const links = document.querySelectorAll(".link_cursor");
-    let mouse = {x: 0, y: 0};
-    let mouseStored = Object.assign({}, mouse);
-    gsap.set(circle, {transformOrigin: "50% 50%"});
-    window.addEventListener("mousemove", function(e) {
-      setMouseCoords(e);
-    });
-    gsap.ticker.add(animateDot);
-  
-    gsap.to(dot, {duration: 1, delay: 1,scale: 1,opacity: 1, ease: "Power2.easeInOut",});
-    links.forEach(link => {
-      link.addEventListener("mouseenter", (e) => {
-        gsap.to(circle, { duration: 0.45,scale: 1.3, opacity:0.3, fill: "#f17b40", ease: "Power2.easeOut", });
-      });
-  
-      link.addEventListener("mouseleave", (e) => {
-        gsap.to(circle, { duration: 0.3, scale: 1, delay: 0.2, opacity:0.6, fill: "#f17b40", ease: "Power2.easeIn",});
-      });
-    });
-  
-    function setMouseCoords(event) {
-      mouse.x = event.clientX;
-      mouse.y = event.clientY;
-    }
-  
-    function animateDot() {
-      if (mouseStored.x === mouse.x && mouseStored.y === mouse.y) return;
-      gsap.to(dot, {
-       x: mouse.x, y: mouse.y, ease: Elastic.easeOut.config(1.25, 1), duration: 2.5, delay: 0.1
-      });
-      mouseStored.x = mouse.x;
-      mouseStored.y = mouse.y;
-    }
-  }());
-
 
   document.querySelectorAll('.anim_parrent_each').forEach((section) => {
   const stepTitleArea_fade = section.querySelector('.anim_parrent_selector_each');
@@ -117,6 +119,29 @@ gsap.timeline({
   }
 })
 .fromTo(".subex_role",
+  { 
+    scale: 0.90,
+    borderRadius: "30px"
+  },
+  { 
+    scale: 1,
+    borderRadius: "0px",
+    ease: "power2.out",
+    duration: 2
+  }
+);
+
+const section_scale1 = document.querySelector('.global_shift');
+gsap.timeline({
+  scrollTrigger: {
+    trigger: section_scale1,
+    start: 'top bottom',
+    end: 'top+=80 top',
+    scrub: 1,
+    markers: false
+  }
+})
+.fromTo(".global_shift",
   { 
     scale: 0.90,
     borderRadius: "30px"

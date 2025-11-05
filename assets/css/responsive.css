@@ -24,8 +24,8 @@
     .header_nav_link{font-size: 14px;}
 
        /*---footer---start---here---*/
-    .footer_link{font-size: 17px;}
-    .footer_colm:last-child .footer_link, .footer_title{font-size: 20px;}
+    .footer_link{font-size: 14px;}
+    .footer_colm:last-child .footer_link, .footer_title{font-size: 18px;}
     .footer_logo{width: 40%;}
 
     .native_ai_partner{padding: 170px 0px 100px 0px;}
@@ -34,8 +34,7 @@
     .subex_desc{font-size: 18px;}
     .native_ai_title_content{font-size: 17px;}
     .native_ai_icon{width: 70px;}
-    .native_ai_content_card {
-    width: calc(100% - 70px);}
+   
 
 
     /*---global---shift---start---here---*/
@@ -143,6 +142,7 @@
 
     .native_ai_title_content{font-size: 14px;}
     .native_ai_icon{width: 56px;}
+    
     .native_ai_content_card {width: calc(100% - 56px);}
 
     /*---global---shift---start---here---*/
