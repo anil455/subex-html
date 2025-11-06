@@ -109,6 +109,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const section_scale2 = document.querySelector('.subex_role');
+if (section_scale2) {
 gsap.timeline({
   scrollTrigger: {
     trigger: section_scale2,
@@ -130,8 +131,10 @@ gsap.timeline({
     duration: 2
   }
 );
+}
 
 const section_scale1 = document.querySelector('.global_shift');
+if (section_scale1) {
 gsap.timeline({
   scrollTrigger: {
     trigger: section_scale1,
@@ -153,6 +156,59 @@ gsap.timeline({
     duration: 2
   }
 );
+}
+
+const section_scale3 = document.querySelector('.fearless_section');
+if (section_scale3) {
+gsap.timeline({
+  scrollTrigger: {
+    trigger: section_scale3,
+    start: 'top bottom',
+    end: 'top+=80 top',
+    scrub: 1,
+    markers: false
+  }
+})
+.fromTo(".fearless_section",
+  { 
+    scale: 0.90,
+    borderRadius: "30px"
+  },
+  { 
+    scale: 1,
+    borderRadius: "0px",
+    ease: "power2.out",
+    duration: 2
+  }
+);
+}
+
+
+const section_scale4 = document.querySelector('.leadership_section');
+if (section_scale3) {
+gsap.timeline({
+  scrollTrigger: {
+    trigger: section_scale4,
+    start: 'top bottom',
+    end: 'top+=80 top',
+    scrub: 1,
+    markers: false
+  }
+})
+.fromTo(".leadership_section",
+  { 
+    scale: 0.90,
+    borderRadius: "30px"
+  },
+  { 
+    scale: 1,
+    borderRadius: "0px",
+    ease: "power2.out",
+    duration: 2
+  }
+);
+}
+
 
 
   
@@ -241,6 +297,44 @@ if ($('.marquee_trusted').length) {
       responsive: true
     });
   }
+
+
+
+
+    $('.fearless_tab_output_inner').each(function() {
+        var $tab = $(this); 
+        $tab.find('.fearless_inner_colm').on('mouseenter', function() {
+            $tab.find('.ferless_card_title').removeClass('active');
+            $(this).find('.ferless_card_title').addClass('active');
+        });
+    });
+
+      $('.tab-menu-list-ferless li span').on('click', function(){
+            var target = $(this).attr('data-rel');
+            $('.tab-menu-list-ferless li span').removeClass('active');
+            $(this).addClass('active');
+            $("#" + target).fadeIn('slow').siblings(".tab-output-box-fearless").hide();
+            var $ul = $('.tab-menu-list-ferless  ul');
+            var position = $(this).position().left;
+            var scroll = $ul.scrollLeft();
+            $ul.animate({
+                scrollLeft: scroll + position - ($ul.width() / 2) + ($(this).outerWidth() / 2)
+            }, 300);
+            
+            return false;
+        });
+
+
+     
+        if ($('.btn_toggle_ceo').length) {
+          $('.btn_toggle_ceo').on('click', function () {
+            const contentWrapper = $('.show_ceo_more_content');
+            const ceoMessage = $('.ceo_message');
+            contentWrapper.slideToggle(300);
+            ceoMessage.toggleClass('active');
+            $(this).toggleClass('active');
+          });
+        }
 
 
 

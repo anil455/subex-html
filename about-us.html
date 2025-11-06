@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <header class="header_wrapper transparrent_header">
+        <div class="container">
+            <div class="header_row">
+                <div class="header_left_colm">
+                    <a href="index.html" class="logo_link">
+                        <img src="assets/images/logo.png" width="100" height="100" class="logo_image">
+                        <img src="assets/images/logo_white.png" width="100" height="100" class="logo_image_white">
+                    </a>
+                </div>
+                <div class="header_right_colm">
+                    <div class="header_search_wrapper">
+                        <div class="header_search_box">
+                            <form action="">
+                                <input type="text" placeholder="Search">
+                                <div class="search_icon_header">
+                                <!-- <img src="assets/images/icon/search-icon.png" alt="image" width="20" height="20"> -->
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1_70)">
+                                        <path d="M15.1367 9.27734C14.8672 9.27734 14.6484 9.49609 14.6484 9.76562C14.6484 10.0352 14.8672 10.2539 15.1367 10.2539C15.4062 10.2539 15.625 10.0352 15.625 9.76562C15.625 9.49609 15.4062 9.27734 15.1367 9.27734Z" fill="black"/>
+                                        <path d="M24.4278 21.666L17.9102 15.1484C18.972 13.5491 19.5312 11.697 19.5312 9.76562C19.5312 4.38086 15.1504 0 9.76562 0C4.38086 0 0 4.38086 0 9.76562C0 15.1504 4.38086 19.5312 9.76562 19.5312C11.6971 19.5312 13.5491 18.9719 15.1484 17.9103L16.9499 19.7118C16.9501 19.712 16.9504 19.7123 16.9507 19.7125L21.6659 24.4278C22.035 24.7968 22.5253 25 23.0469 25C23.5684 25 24.0588 24.7968 24.4276 24.4279C24.7967 24.0591 25 23.5687 25 23.0469C25 22.525 24.7967 22.0346 24.4278 21.666ZM14.9188 16.8812L14.9187 16.8813C13.4115 17.976 11.6296 18.5547 9.76562 18.5547C4.91934 18.5547 0.976562 14.6119 0.976562 9.76562C0.976562 4.91934 4.91934 0.976562 9.76562 0.976562C14.6119 0.976562 18.5547 4.91934 18.5547 9.76562C18.5547 11.6296 17.976 13.4115 16.8813 14.9187C16.3335 15.6732 15.6733 16.3335 14.9188 16.8812ZM15.9432 17.3239C16.4485 16.9104 16.9105 16.4485 17.3239 15.9432L18.7092 17.3285C18.2879 17.8257 17.8257 18.2879 17.3285 18.7092L15.9432 17.3239ZM23.7373 23.7373C23.5527 23.9218 23.3075 24.0234 23.0469 24.0234C22.7862 24.0234 22.5411 23.9218 22.3565 23.7373L18.0208 19.4016C18.5153 18.9772 18.9772 18.5153 19.4015 18.0208L23.7374 22.3567C23.9218 22.541 24.0234 22.786 24.0234 23.0469C24.0234 23.3077 23.9218 23.5528 23.7373 23.7373Z" fill="black"/>
+                                        <path d="M9.76562 1.95312C5.45776 1.95312 1.95312 5.45776 1.95312 9.76562C1.95312 14.0735 5.45776 17.5781 9.76562 17.5781C14.0735 17.5781 17.5781 14.0735 17.5781 9.76562C17.5781 5.45776 14.0735 1.95312 9.76562 1.95312ZM9.76562 16.6016C5.99629 16.6016 2.92969 13.535 2.92969 9.76562C2.92969 5.99629 5.99629 2.92969 9.76562 2.92969C13.535 2.92969 16.6016 5.99629 16.6016 9.76562C16.6016 13.535 13.535 16.6016 9.76562 16.6016Z" fill="black"/>
+                                        <path d="M15.2375 7.66958C14.8171 6.57524 14.085 5.6396 13.1204 4.96387C12.1328 4.27197 10.9727 3.90625 9.76562 3.90625C9.496 3.90625 9.27734 4.1249 9.27734 4.39453C9.27734 4.66416 9.496 4.88281 9.76562 4.88281C11.7724 4.88281 13.605 6.14346 14.326 8.01987C14.4006 8.21401 14.5856 8.33315 14.7819 8.33315C14.8401 8.33315 14.8993 8.32266 14.9569 8.30054C15.2086 8.20381 15.3343 7.92134 15.2375 7.66958Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1_70">
+                                        <rect width="25" height="25" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="menu_toggle_btn">
+                        <svg class="menuIcon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9987 16L26.6654 16M9.9987 8H26.6654M5.33203 24H26.6654" stroke="#f17b40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <svg class="menu_close_icon" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#f17b40"/>
+                        </svg>
+                    </div>
+                    <div class="header_nav">
+                        <ul class="header_nav_list_wrapper">
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">SOLUTIONS</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">PRODUCTS & SERVICES</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">INVESTORS</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">THEMES</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">INDUSTRIES</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="about-us.html" class="link_cursor header_nav_link">ABOUT US</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">RESOURCES</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor header_nav_link">NEWSROOM</a>
+                            </li>
+                            <li class="header_nav_list">
+                                <a href="#" class="link_cursor common_btn_subex">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+   <section class="about_us_banner">
+      <img src="assets/images/about-us/about-us-banner.jpg" alt="image" width="1440" height="820" class="about_banner_image">
+      <div class="container">
+        <div class="about_banner_content">
+            <div class=" subex_title_common text_white wow fadeInUp" data-wow-duration="1500ms">The world is evolving</div>
+            <div class=" subex_title_common text_brand wow fadeInUp" data-wow-duration="1500ms">So are we</div>
+                
+            <div class=" dec_common text_white wow fadeInUp" data-wow-duration="1500ms">For over three decades, Subex has been at the forefront of securing and optimizing
+                    telecom operations. We helped build the foundation of the digital world. Now, as that world undergoes its most
+                    profound shift: from information to intent; we are once again leading the way. We have evolved from being the 
+                    guardians of telecom revenue to becoming the architects of intent-driven operations.  </div>
+                
+        </div>
+      </div>
+   </section>
+
+   <section class=" our_vision_section">
+    <img src="assets/images/about-us/our-vision-bg.jpg" alt="image" width="1440" height="820" class="our_vision_img">
+    <div class="common_gap vision_wrapper">
+      <div class="container">
+        <div class="our_vision_content_wrapper">
+            <div class="anim_parrent_each">
+                <div class="anim_parrent_selector_each">
+                    <div class="anim_selector small_title_common  wow fadeInUp" data-wow-duration="1500ms">Our Vision</div>
+                </div>
+            </div>
+            <div class="anim_parrent_each">
+                <div class="anim_parrent_selector_each">
+                    <div class="anim_selector subex_title_common  wow fadeInUp" data-wow-duration="1500ms">Empowering</div>
+                </div>
+            </div>
+            <div class="anim_parrent_each">
+                <div class="anim_parrent_selector_each">
+                    <div class="anim_selector subex_title_common  wow fadeInUp" data-wow-duration="1500ms">Every Digital Journey</div>
+                </div>
+            </div>
+
+            <div class="vision_desc_box">
+                <div class="anim_parrent_each">
+                <div class="anim_parrent_selector_each">
+                    <div class="anim_selector  dec_common">To empower telcos to re-architect for intent building
+                    systems/stacks that understand, anticipate, and act with Human Supervised autonomy.</div>
+                 </div>
+            </div>
+            <div class="anim_parrent_each">
+                <div class="anim_parrent_selector_each">
+                    <div class="anim_selector dec_common " >Re-architecting the telecom world for intent, where
+                        AI amplifies human intelligence to anticipate change and act with confidence. A space where human intelligence and AI work in close collaboration</div>
+                 </div>
+            </div> 
+            </div>
+                   
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <section class="common_gap fearless_section">
+    <img src="assets/images/about-us/fearless_left_logo.png" alt="icon" width="400" height="400" class="fearless_left_logo">
+      <div class="container">
+        <div class="row_fearless">
+            <div class="fearless_right_colm">
+                <div class="fearless_content_colm">
+                    <div class="anim_parrent_each">
+                <div class="anim_parrent_selector_each">
+                    <div class="anim_selector small_title_common text_white  wow fadeInUp" data-wow-duration="1500ms">Our Vision</div>
+                </div>
+                </div>
+                <div class="anim_parrent_each">
+                    <div class="anim_parrent_selector_each">
+                        <div class="anim_selector subex_title_common text_white  wow fadeInUp" data-wow-duration="1500ms">Empowering</div>
+                    </div>
+                </div>
+
+                <div class="anim_parrent_each">
+                    <div class="anim_parrent_selector_each">
+                        <div class="anim_selector dec_common text_white wow fadeInUp" data-wow-duration="1500ms" >Re-architecting the telecom world for intent, where
+                            AI amplifies human intelligence to anticipate change and act with confidence. A space where human intelligence and AI work in close collaboration</div>
+                    </div>
+                </div> 
+
+                <div class="tab_wrapper_fearless">
+                    <div class="tab-menu-list-ferless">
+                        <ul>
+                            <li><span class="active" data-rel="tab1">Fearless</span></li>
+                            <li><span data-rel="tab2" class="">Seamless</span></li>
+                            <li><span data-rel="tab3" class="">Fraud-Free</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-wraper-box_fearless wow fadeInRight" data-wow-duration="1500ms">
+                        <div class="tab-output-box-fearless" id="tab1" style="display:block;">
+
+                            <div class="fearless_tab_output_inner">
+                                <div class="fearless_inner_colm">
+                                    <div class="ferleass_card_box">
+                                        <div class="ferless_card_title active">AI-Native Approach</div>
+                                        <div class="ferless_inner_card">
+                                            <div class="ferless_inner_title">Anticipate risk. Move from reactive to proactive assurance.</div>
+                                            <div class="fearless_inner_desc">We use AI to model and anticipate business risk across your entire ecosystem, so decisions are taken faster and better. Always under human supervision and grounded in deep telco domain expertise.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="fearless_inner_colm">
+                                    <div class="ferleass_card_box">
+                                        <div class="ferless_card_title">The TELCO’s Experience</div>
+                                        <div class="ferless_inner_card">
+                                            <div class="ferless_inner_title">Launch with confidence</div>
+                                            <div class="fearless_inner_desc">Bring new 5G and digital services to market with clarity, not fear, knowing risk is foreseen and controlled.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-output-box-fearless" id="tab2">
+                            <div class="fearless_tab_output_inner">
+                                <div class="fearless_inner_colm">
+                                    <div class="ferleass_card_box">
+                                        <div class="ferless_card_title active">AI-Native Approach</div>
+                                        <div class="ferless_inner_card">
+                                            <div class="ferless_inner_title">Always-on optimization with human-supervised autonomy.</div>
+                                            <div class="fearless_inner_desc">We deploy autonomous AI agents that work continuously in the background to orchestrate complex processes, while 
+                                            experts stay in the loop to guide, govern, and improve outcomes.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="fearless_inner_colm">
+                                    <div class="ferleass_card_box">
+                                        <div class="ferless_card_title">The TELCO’s Experience</div>
+                                        <div class="ferless_inner_card">
+                                            <div class="ferless_inner_title">Effortless experiences</div>
+                                            <div class="fearless_inner_desc">Customers enjoy perfectly smooth journeys, while operations teams are freed from repetitive tasks and manual firefighting.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-output-box-fearless" id="tab3">
+                           <div class="fearless_tab_output_inner">
+                                <div class="fearless_inner_colm">
+                                    <div class="ferleass_card_box">
+                                        <div class="ferless_card_title active">AI-Native Approach</div>
+                                        <div class="ferless_inner_card">
+                                            <div class="ferless_inner_title">Self-learning defense that evolves with threats.</div>
+                                            <div class="fearless_inner_desc">We build adaptive systems that learn from signals across the 
+                                                network and partners to detect and deter both known and unknown fraud, without diluting critical RAFM domain intelligence.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="fearless_inner_colm">
+                                    <div class="ferleass_card_box">
+                                        <div class="ferless_card_title">The TELCO’s Experience</div>
+                                        <div class="ferless_inner_card">
+                                            <div class="ferless_inner_title">Revenue you can trust</div>
+                                            <div class="fearless_inner_desc">Your revenue stays secure and your ecosystem maintains unbreakable digital trust.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+      </div>
+   </section>
+
+   <section class="common_gap journey_section">
+      <div class="container">
+         <div class=" subex_title_common text_brand text_center wow fadeInUp" data-wow-duration="1500ms">The Subex Journey</div>
+         <div class="journey_wrapper">
+            <div class="journey_image">
+                <img src="assets/images/about-us/journey.png" alt="image" width="1440" height="200" 
+                class="jouney_img wow zoomIn" data-wow-duration="1500ms" >
+            </div>
+            <div class="jouney_row wow fadeInUp" data-wow-duration="1500ms">
+                <div class="journey_colm">
+                    <div class="jouney_title">1994</div>
+                    <div class="jouney_desc">Digital trust pioneers.</div>
+                </div>
+                <div class="journey_colm">
+                    <div class="jouney_title">2000s</div>
+                    <div class="jouney_desc">Telecom FM &  Business Assurance leadership.</div>
+                </div>
+                <div class="journey_colm">
+                    <div class="jouney_title">2020s</div>
+                    <div class="jouney_desc">AI-driven evolution.</div>
+                </div>
+                <div class="journey_colm">
+                    <div class="jouney_title">NOW</div>
+                    <div class="jouney_desc"><strong>Subex reimagined</strong> Powering the intent economy.</div>
+                </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="common_gap leadership_section">
+     <img src="assets/images/about-us/leadership_bg.jpg" alt="icon" width="1440" height="900" class="leadership_bg">
+       <div class="container">
+          <div class="leadership_row">
+              <div class="leadership_colm">
+                  <div class="leadership_left_content">
+                    <div class="anim_parrent_each">
+                            <div class="anim_parrent_selector_each">
+                                <div class="anim_selector small_title_common text_white  wow fadeInUp" data-wow-duration="1500ms">OUR LEADERSHIP & VALUES</div>
+                            </div>
+                        </div>
+                        <div class="anim_parrent_each">
+                            <div class="anim_parrent_selector_each">
+                                <div class="anim_selector subex_title_common text_white  wow fadeInUp" data-wow-duration="1500ms">Principles that power fearless, seamless, and fraud-free digital journeys</div>
+                            </div>
+                        </div>
+
+                            <div class="anim_parrent_each">
+                                <div class="anim_parrent_selector_each">
+                                    <div class="anim_selector  dec_common text_white">Human intelligence and AI in close collaboration, guided by deep telco domain expertise.</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="leadership_colm">
+                    <div class="leader_ship_card">
+                        <div class="anim_parrent_each">
+                            <div class="anim_parrent_selector_each">
+                                <div class="anim_selector leader_ship_title text_white fadeInUp" data-wow-duration="1500ms">CUSTOMER-LED CO-CREATION</div>
+                            </div>
+                        </div>
+
+                        <div class="anim_parrent_each">
+                            <div class="anim_parrent_selector_each">
+                                <div class="anim_selector leader_ship_bold_title text_white wow fadeInUp" data-wow-duration="1500ms">Build what customers need next</div>
+                            </div>
+                        </div>
+                        <div class="anim_parrent_each">
+                            <div class="anim_parrent_selector_each">
+                                <div class="anim_selector leadership_card_desc text_white wow fadeInUp" data-wow-duration="1500ms">We don’t just sell solutions; we partner with our customers to co-design, validate, and scale the next wave of impact.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leader_ship_card">
+                        <div class="anim_parrent_each">
+                            <div class="anim_parrent_selector_each">
+                                <div class="anim_selector leader_ship_title text_white wow fadeInUp" data-wow-duration="1500ms">PIONEERING GRIT</div>
+                            </div>
+                        </div>
+
+                        <div class="anim_parrent_each">
+                            <div class="anim_parrent_selector_each">
+                                <div class="anim_selector leader_ship_bold_title text_white wow fadeInUp" data-wow-duration="1500ms">Challenge the status quo</div>
+                            </div>
+                        </div>
+                        <div class="anim_parrent_each">
+                            <div class="anim_parrent_selector_each">
+                                <div class="anim_selector leadership_card_desc text_white wow fadeInUp" data-wow-duration="1500ms">We have the courage to build the future. Re-architecting stacks and operating models rather than merely adapting to change.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leader_ship_card">
+                        <div class="anim_parrent_each">
+                            <div class="anim_parrent_selector_each">
+                                <div class="anim_selector leader_ship_title text_white wow fadeInUp" data-wow-duration="1500ms">PURPOSEFUL INNOVATION</div>
+                            </div>
+                            </div>
+
+                            <div class="anim_parrent_each">
+                                <div class="anim_parrent_selector_each">
+                                    <div class="anim_selector leader_ship_bold_title text_white wow fadeInUp" data-wow-duration="1500ms">Mission‑driven engineering</div>
+                                </div>
+                            </div>
+                            <div class="anim_parrent_each">
+                                <div class="anim_parrent_selector_each">
+                                    <div class="anim_selector leadership_card_desc text_white wow fadeInUp" data-wow-duration="1500ms">Every line of code and every AI model advances our mission to empower fearless, seamless, and fraud-free digital journeys, under human supervised autonomy.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+          </div>
+       </div>
+   </section>
+
+   <section class="common_gap ceo_message">
+    <img src="assets/images/about-us/ceo-bg.png" alt="icon" width="400" height="400" class="ceo_bg">
+      <div class="container">
+        <div class="ceo_message_row">
+            <div class="ceo_message_colm">
+                <div class="ceo_message_image">
+                    <img src="assets/images/about-us/ceo-img.jpg" alt="image" width="500" height="500" class="img_ceo">
+                </div>
+            </div>
+            <div class="ceo_message_colm">
+                <div class="ceo_message_content">
+                    <div class="anim_parrent_each">
+                        <div class="anim_parrent_selector_each">
+                            <div class="anim_selector small_title_common  wow fadeInUp" data-wow-duration="1500ms">CEO’s MESSAGE</div>
+                        </div>
+                    </div>
+                    <div class="anim_parrent_each">
+                        <div class="anim_parrent_selector_each">
+                            <div class="anim_selector subex_title_common  wow fadeInUp" data-wow-duration="1500ms">Where Human Purpose Meets AI Possibility.</div>
+                        </div>
+                    </div>
+
+                    <div class="anim_parrent_each">
+                        <div class="anim_parrent_selector_each">
+                            <div class="anim_selector  dec_common">At Subex, we stand at the intersection of human ingenuity and artificial intelligence. For over three decades, we have helped telecom operators around the world navigate complexity with confidence — safeguarding revenues, strengthening trust, and unlocking growth. Today, as we step into an intent-driven era, our vision is to build systems that don’t just respond to change, but anticipate it — systems that think, learn, and act with human-supervised autonomy.</div>
+                        </div>
+                    </div>
+                    <div class="anim_parrent_each ">
+                        <div class="anim_parrent_selector_each">
+                            <div class="anim_selector  dec_common show_ceo_more_content">Our mission remains rooted in purpose: empowering fearless, seamless, and fraud-free digital journeys. We believe the future of telecom will be shaped not by technology alone, but by the collaboration between human insight and AI’s infinite capability. With this belief, we continue to re-architect for intent — helping our partners evolve from assurance to anticipation, and from possibility to performance.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="btn_toggle_ceo">
+                        <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.04431 14.7752C9.24402 16.3839 11.6544 16.3839 12.8541 14.7752L20.2979 4.79345C21.7736 2.81472 20.3614 0 17.893 0H3.00541C0.537042 0 -0.875118 2.81472 0.600507 4.79344L8.04431 14.7752Z" fill="#6F6F6F"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+   </section>
+
+   <section class=" leadrship_message_section">
+       <div class="container">
+          <div class="row_leadrship_message">
+            <div class="colm_leader_ship_message">
+                <img src="assets/images/about-us/leadership_logo.png" alt="icon" width="400" height="400"
+                 class="ledrship_message_logo wow zoomIn" data-wow-duration="1500ms">
+            </div>
+            <div class="colm_leader_ship_message">
+                <div class="anim_parrent_each">
+                        <div class="anim_parrent_selector_each">
+                            <div class="anim_selector small_title_common  wow fadeInUp" data-wow-duration="1500ms">Message from the Leadership</div>
+                        </div>
+                    </div>
+                    <div class="anim_parrent_each">
+                        <div class="anim_parrent_selector_each">
+                            <div class="anim_selector subex_title_common  wow fadeInUp" data-wow-duration="1500ms">The Call to the Future</div>
+                        </div>
+                    </div>
+
+                    <div class="anim_parrent_each">
+                        <div class="anim_parrent_selector_each">
+                            <div class="anim_selector  dec_common">The winners of tomorrow will be fearless enough to automate risk, seamless enough to disappear, and fraud free by design</div>
+                        </div>
+                    </div>
+                    <div class="anim_parrent_each">
+                        <div class="anim_parrent_selector_each">
+                            <div class="anim_selector  dec_common bold_desc">Subex stands ready to make that future possible - today.</div>
+                        </div>
+                    </div>
+                    <div class="btn_box_leadreship_message">
+                        <a href="#" class="common_btn_subex">Explore our Solutions</a>
+                        <a href="#" class="common_btn_subex common_btn_subex2">Partner with Subex</a>
+                    </div>
+            </div>
+          </div>
+       </div>
+   </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer_row">
+                <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <div class="footer_title wow fadeInUp" data-wow-duration="1500ms">CAPABILITIES</div>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">AI-Powered Fraud Management</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Business Assurance & Revenue Integrity</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Partner Ecosystem Management</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Enterprise Asset Intelligence</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Network & OT Security</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <div class="footer_title wow fadeInUp" data-wow-duration="1500ms">SOLUTIONS</div>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">HyperSense AI Platform</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">AI Agents</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Consulting & Advisory</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Managed Services</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Cloud & DataOps Transformation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <div class="footer_title wow fadeInUp" data-wow-duration="1500ms">INDUSTRIES</div>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Telecom Operators</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Enterprises</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">IoT & Smart Cities</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Cloud & Edge Providers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <div class="footer_title wow fadeInUp" data-wow-duration="1500ms">INSIGHTS</div>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Blogs & White Papers</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Case Studies</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Webinars & Events</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Fraud Alerts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <div class="footer_title wow fadeInUp" data-wow-duration="1500ms">ABOUT</div>
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">About Subex</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Leadership</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Partners</a>
+                            </li>
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer_colm">
+                    <div class="footer_inner_box">
+                        <ul class="footer_list">
+                            <li class="footer_item">
+                                <a href="#" class="footer_link">CONTACT</a>
+                            </li>
+                            <li class=" footer_item">
+                                <a href="#" class="footer_link">CAREERS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="assets/images/footer_logo.png" alt="image" width="400" height="200">
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/infiniteslidev2.js"></script>
+<script src="assets/js/custom.js"></script> 
+</body>
+</html>
