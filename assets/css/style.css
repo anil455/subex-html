@@ -82,6 +82,11 @@
     .common_btn_subex2:hover{color: var(--whiteColor);background: linear-gradient(90.5deg, #EFAB4D 0.53%, #E1693D  99.59%);}
 
 
+    .dots_canvas_box{height: 100vh;}
+    .dots_canvas_box canvas {width: 100%;height: 100%;}
+   .canvas_logo{position: absolute;z-index: 2;top: 25%;left: 725px;width: 262px;pointer-events: none; opacity: 0.8;}
+
+
     /*---header---start---here---*/
     header{padding: 15px 0px;position: fixed;top: 0px;z-index: 99999;background: #fff;transition: all 0.3s;left: 0px;right: 0px;}
     header.fixed-header{padding: 10px 0px;}
@@ -401,10 +406,19 @@
 
 
       /*---about--us---banner---start---here---*/
-      .about_us_banner{aspect-ratio: 1440 / 820;width: 100%; position: relative;}
-      .about_us_banner .container{height: 100%;display: flex;justify-content: flex-end;align-items: center;position: relative;z-index: 2;}
+      .about_us_banner{
+         /* aspect-ratio: 1440 / 820; */
+         width: 100%; position: relative;}
+      .about_us_banner .container{display: flex;justify-content: flex-end;align-items: center;}
       .about_banner_image{position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;width: 100%;height: 100%;object-fit: cover;}
       .about_banner_content{width: 450px;}
+      .video_box_about video{width: 100%;height: initial;display: block;position: relative;}
+      .about_banner_content_wrapper{position: absolute;top: 50%;left: 0px;right: 0px;width: 100%; transform: translate(0px, -50%);z-index: 2;}
+      .video_box_about:after{content: '';position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0.0) 28%), 
+             linear-gradient(270deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.0) 70%);pointer-events:none;
+             z-index: 1;
+      }
 
       
 
@@ -413,7 +427,7 @@
       
       .our_vision_section{position: relative;}
       .our_vision_img{position: static;width: 100%;height: initial;}
-      .our_vision_section .vision_wrapper{position: absolute;top: 50%;left: 0px;transform: translate(0px, -50%);z-index: 3;width: 100%;}
+      .our_vision_section .vision_wrapper{position: absolute;top: 50%;left: 0px;transform: translate(0px, -50%);z-index: 3;width: 100%;pointer-events: none;}
       .our_vision_content_wrapper{width: 550px;}
       .vision_desc_box .anim_parrent_each:first-child .dec_common{color: var(--brandColor);}
 
@@ -449,6 +463,8 @@
       .journey_section .subex_title_common{font-size: 42px;font-weight: 700;}
       .jouney_img{width: 100%;display: block;height: initial;}
       .journey_wrapper{padding: 0px 50px;margin-top: 40px;}
+      .journey_wrapper_mobile{display: none;}
+      .journey_marque_box, .jurney_marque{display: none;}
       .jouney_row{display: flex;flex-wrap: wrap;margin: 0px -15px;}
       .journey_colm{width: 25%;padding: 15px;text-align: center;}
       .jouney_title{font-size: 42px;font-weight: 700;color: #F46B27;}

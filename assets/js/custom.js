@@ -9,6 +9,8 @@ $(window).on("scroll load", function () {
 });
 
 
+
+
 $(document).ready(function(){
 
     $(window).trigger("scroll");
@@ -46,6 +48,7 @@ $(document).ready(function(){
     });
 
 
+    
     
 
 
@@ -298,6 +301,34 @@ if ($('.marquee_trusted').length) {
     });
   }
 
+  if ($(window).width() < 768 && $('.jouney_marque_row').length) {
+    $('.jouney_marque_row, .jurney_marque').infiniteslide({
+      speed: 0,
+      direction: 'left',
+      pauseonhover: true,
+      responsive: true
+    });
+
+    var marqueeStarted = false;
+
+    $(window).on('scroll', function() {
+      var $section = $('.journey_section');
+      var sectionTop = $section.offset().top;
+      var windowBottom = $(window).scrollTop() + $(window).height();
+      if (!marqueeStarted && windowBottom > sectionTop + 50) {
+        marqueeStarted = true;
+        setTimeout(function() {
+          $('.jouney_marque_row, .jurney_marque').infiniteslide({
+            speed: 50,
+            direction: 'left',
+            pauseonhover: true,
+            responsive: true
+          });
+        }, 5000);
+      }
+    });
+  }
+
 
 
 
@@ -339,3 +370,7 @@ if ($('.marquee_trusted').length) {
 
 
 });
+
+
+
+

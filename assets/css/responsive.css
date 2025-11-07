@@ -14,6 +14,7 @@
 
 
 @media screen and (max-width: 1400px){
+  .canvas_logo{left: 650px;}
     .common_btn_subex{font-size: 14px;}
     .container{padding: 0px 75px;}
     .common_desc{margin-top: 10px;}
@@ -157,6 +158,9 @@
 
 .colm_leader_ship_message .dec_common{width: 100%;}
 
+.dots_canvas_box{height: 700px;}
+.canvas_logo{left: 570px;}
+
 }
 
 
@@ -191,7 +195,7 @@
 
 /*---about--us---start---here---*/
 .about_banner_content{margin-top: 80px;width: 100%;}
-.about_us_banner:after{content: '';position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;background: #000;opacity: 0.4;}
+/* .about_us_banner:after{content: '';position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;background: #000;opacity: 0.4;} */
 
 .our_vision_content_wrapper{width: 100%;}
 .our_vision_section .container{position: relative;z-index: 2;} 
@@ -206,6 +210,10 @@
 .ceo_message_content{padding-left: 0px;margin-top: 50px;}
 .btn_box_leadreship_message .common_btn_subex2{margin-left: 0px;margin-top: 20px;}
 .btn_box_leadreship_message .common_btn_subex{min-width: 225px;text-align: center;}
+
+.canvas_logo{display: none;}
+.our_vision_section .vision_wrapper{position: absolute;transform: translate(0px,-50%);}
+.dots_canvas_box{height: 500px;}
 
 
 }
@@ -284,8 +292,18 @@ footer{padding-top: 25px;}
    .native_ai_card:after{display: none;}
   
    /*---about--us---start---here---*/
-   .about_us_banner{aspect-ratio: initial;padding: 100px 0px 50px;}
+   .about_us_banner{
+    aspect-ratio: initial;
+    /* padding: 100px 0px 50px; */
+    padding: 0px;
+  }
+  .about_banner_content_wrapper{position: static;transform: none;background: rgb(255 229 206);padding: 50px 0px;}
+   .about_us_banner .text_white{color: #000;}
+
+
    .about_banner_content{margin-top: 0px;}
+   .video_box_about:after{    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 22%, rgba(0, 0, 0, 0.0) 45%), 
+    linear-gradient(270deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.0) 0%);}
 
    .fearless_tab_output_inner{margin: 0px;}
    .fearless_inner_colm{padding: 0px;width: 100%;}
@@ -294,8 +312,10 @@ footer{padding-top: 25px;}
    .tab-menu-list-ferless li{margin: 0px 10px;}
    .ferless_inner_title{margin-bottom: 20px;}
 
-   .journey_wrapper{ width: calc(100% + 30px);white-space: normal; overflow: auto;margin-right: -15px;position: relative;
-  left: -15px;padding-left: 15px;right: -15px; scrollbar-width: none;}
+   .journey_section .container{padding: 0px;}
+   .journey_section .subex_title_common{padding: 0px 15px;}
+  .journey_wrapper_mobile{display: block;}
+  .journey_wrapper_desktop{display: none;}
   .my-journey_wrapper::-webkit-scrollbar {display: none;}
    .jouney_row, .journey_image{width: 780px;margin: 0px;padding-right: 15px;overflow: hidden;}
    .journey_colm{padding: 10px 8px;}
@@ -317,11 +337,16 @@ footer{padding-top: 25px;}
     .colm_leader_ship_message:nth-of-type(2){order: 1;}
     .leadrship_message_section{padding-bottom: 0px;}
 
+    .dots_canvas_box{height: 620px;}
+
 }
 
 
 @media screen and (max-width: 500px){
-
+  
+  /*---about--start---here---*/
+  .video_box_about{position: relative;}
+  .video_box_about video{height: 330px;object-fit: cover;}
 }
 
 @media screen and (max-width: 400px){
