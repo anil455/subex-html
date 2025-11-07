@@ -24,6 +24,16 @@ $(document).ready(function(){
         $("body").toggleClass("overflow_hidden");
     });
 
+    var currentPage = window.location.pathname.split("/").pop();
+
+    // Sabhi navigation links me check karo
+    $('.header_nav_link').each(function(){
+        if($(this).attr('href') === currentPage){
+            $(this).addClass('active');
+        }
+    });
+
+
     // $('.expectations_card').eq(1).addClass('active');
       $('.expectations_card').on('mouseenter', function() {
       $(this).addClass('active')
