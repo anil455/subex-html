@@ -72,9 +72,29 @@
     .container{max-width: 1700px;margin: 0px auto; padding: 0px 100px;}
     .overflow_hidden{overflow: hidden;}
     .common_btn_subex{font-size: 15px;background: var(--brandBg);color: var(--whiteColor);border-radius: 5px;padding: 4px 18px;
-    font-weight: 600;
-   transition: background-position 0.4s ease, color 0.3s ease;}
-    .common_btn_subex:hover{color: var(--whiteColor);background: linear-gradient(90.5deg, #EFAB4D 0.53%, #E1693D  99.59%);}
+    font-weight: 600;position: relative;}
+   .common_btn_subex:before{
+      content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90.5deg, #EFAB4D 0.53%, #E1693D  99.59%);
+    z-index: -1;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    opacity: 0;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 5px;
+   }
+   .common_btn_subex span{position: relative;z-index: 2;color: #fff;display: inline-block;}
+    .common_btn_subex:hover{color: var(--whiteColor);}
+     .common_btn_subex:hover:before{opacity: 1;}
     .common_gap{padding: 100px 0px;}
     .white_bg_section{background: #fff;position: relative;z-index: 2;}
     .text_brand{color: var(--brandColor) !important;}
@@ -533,6 +553,7 @@
       .about_us_banner .container{display: flex;justify-content: flex-end;align-items: center;}
       .about_banner_image{position: absolute;top: 0px;left: 0px;bottom: 0px;right: 0px;width: 100%;height: 100%;object-fit: cover;}
       .about_banner_content{width: 450px;}
+      
       .video_box_about video{width: 100%;height: initial;display: block;position: relative;}
       .about_banner_content_wrapper{position: absolute;top: 50%;left: 0px;right: 0px;width: 100%; transform: translate(0px, -50%);z-index: 2;}
       .video_box_about:after{content: '';position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;
@@ -540,6 +561,13 @@
              linear-gradient(270deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.0) 70%);pointer-events:none;
              z-index: 1;
       }
+
+      .video_box_about2{position: relative;padding-top: 56.5%;background: #000;} 
+      .video_box_about2 video{width: 100%;display: block;height:100%;position: absolute;top: 0px;bottom: 0px;left: 0px;right: 0px;}
+
+      .ifram_video_banner{position: relative;padding-top: 56%;}
+
+      .ifram_video_banner iframe{width: 100%;display: block;height:100%;position: absolute;top: 0px;bottom: 0px;left: 0px;}
 
       
 
