@@ -229,7 +229,7 @@
     /*----footer---start---here---*/
     footer{padding: 65px 0px 40px 0px;
          background: linear-gradient(173.62deg, #FFD13E 4.77%, #E76300 47.46%, #6F0300 90.99%);
-         background-image: url(../images/footer-bg.jpg);
+         background-image: url(../images/footer-bg.png);
          background-size: cover;
          position: relative;z-index: 2;}
     .footer_row{display: flex;flex-wrap: wrap;margin: 0px -15px;}
