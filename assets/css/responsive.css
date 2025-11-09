@@ -80,6 +80,7 @@
     .trust_network_desc p{font-size: 18px;margin-top: 20px;}
 
     .trusted_logo_wrapper{top: -80px;bottom: -80px;}
+    .trusted_power{padding-bottom: 80px;}
 
     /*---about--us---start---here---*/
 
@@ -395,6 +396,7 @@ footer{padding-top: 25px;}
    .trusted_card_count:after{font-size: 28px;}
    .native_ai_card:after{display: none;}
    .tab_solution_right_content{padding: 20px;}
+   .trusted_power{padding-bottom: 0px;}
   
    /*---about--us---start---here---*/
    .about_us_banner{
