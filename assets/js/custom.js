@@ -3,8 +3,10 @@ $(window).on("scroll load", function () {
   var scroll = $(window).scrollTop();
   if (scroll > 90) {
     $(".header_wrapper").addClass("fixed-header");
+    $(".header_sub_nav_wrapper").addClass("padding_top_reduce");
   } else if (scroll < 70) {
     $(".header_wrapper").removeClass("fixed-header");
+    $(".header_sub_nav_wrapper").removeClass("padding_top_reduce");
   }
 });
 
@@ -22,16 +24,96 @@ $(document).ready(function(){
         $(".header_nav").toggleClass("active");
         $(this).toggleClass("active");
         $("body").toggleClass("overflow_hidden");
+        $("header").toggleClass("active_menu_wrapper");
     });
 
     var currentPage = window.location.pathname.split("/").pop();
 
-    // Sabhi navigation links me check karo
+   
     $('.header_nav_link').each(function(){
         if($(this).attr('href') === currentPage){
             $(this).addClass('active');
         }
     });
+
+
+  if(window.matchMedia("(max-width: 1199px)").matches){
+    $('.header_nav_link').on('click', function() {
+        var target = $(this).data('target');
+        $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+        $(".header_nav_link").removeClass("active_dropdowen");
+        if (target) {
+            $('#' + target).addClass('active_sub_nav');
+        }
+    });
+    
+    $(".back_button_sub_menu_mobile").click(function(){
+       $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+    });
+    $(".menu_close_icon").click(function(){
+       $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+    });
+  }
+
+    
+if(window.matchMedia("(min-width: 1200px)").matches){
+
+   $('.header_nav_link').on('mouseenter', function() {
+        var target = $(this).data('target');
+        $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+        $(".header_nav_link").removeClass("active_dropdowen");
+        if (target) {
+            $('#' + target).addClass('active_sub_nav');
+            $(this).addClass("active_dropdowen");
+        }
+        
+    });
+
+
+    $('.logo_link, .header_search_box').on('mouseenter', function() {
+        $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+        $(".header_nav_link").removeClass("active_dropdowen");
+    });
+
+    $(document).on('mouseleave', function(e) {
+      if (e.clientY <= 0 || e.clientX <= 0 || e.clientX >= window.innerWidth || e.clientY >= window.innerHeight) {
+          $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+          $(".header_nav_link").removeClass("active_dropdowen");
+      }
+    });
+  $('.header_sub_nav_wrapper .container').on('mouseleave', function(e) {
+      var $this = $(this);
+      var offset = $this.offset();
+      var bottom = offset.top + $this.outerHeight();
+      if (e.pageY > bottom) {
+          $this.closest('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+          $(".header_nav_link").removeClass("active_dropdowen");
+      }
+  });
+  $(document).on('mousemove', function(e) {
+      const scrollbarThreshold = 25;
+      if (e.clientX >= window.innerWidth - scrollbarThreshold) {
+          $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+          $(".header_nav_link").removeClass("active_dropdowen");
+      }
+  });
+
+}
+
+
+   $('.header_sub_nav_wrapper_inner').each(function() {
+  var $wrappertabinner = $(this);
+  $wrappertabinner.find('.ul_nav_tab_list li span').on('click', function() {
+    var target = $(this).attr('data-rel');
+    $wrappertabinner.find('.ul_nav_tab_list li span').removeClass('active');
+    $(this).addClass('active');
+    $wrappertabinner.find('.tab_output_box_nav').hide();
+   $wrappertabinner.find('#' + target).fadeIn('slow');
+
+    return false;
+  });
+});
+
 
 
     // $('.expectations_card').eq(1).addClass('active');
