@@ -455,7 +455,7 @@
             }
 
       /*---trusted---power---start---here---*/
-      .trusted_power{background: #fff;position: relative;z-index: 2;padding-bottom: 20px;}
+      .trusted_power{background: #fff;position: relative;z-index: 2;padding-bottom: 100px;}
       .trusted_power_row{display: flex;flex-wrap: wrap;}
       .trusted_power_colm{width: 33.333%;}
       .trusted_power_row .trusted_power_colm:first-child{width: 64%;}
