@@ -74,6 +74,7 @@ if (overlay) {
         $("body").removeClass("overflow_hidden");
         $("header").removeClass("active_menu_wrapper");
         $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+        $('.menu_toggle_btn').removeClass('active');
         
     });
 
