@@ -15,6 +15,42 @@ $(window).on("scroll load", function () {
 
 $(document).ready(function(){
 
+
+
+
+const lenis = new Lenis({
+  duration: 1.5,
+  smooth: true,
+  smoothTouch: false
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+lenis.on("scroll", ScrollTrigger.update);
+
+//  Lenis ko overlay ke andar disable karo
+const overlay = document.querySelector(".header_sub_nav_wrapper");
+
+if (overlay) {
+  // When mouse enters or user touches overlay → stop Lenis
+  overlay.addEventListener("mouseenter", () => lenis.stop());
+  overlay.addEventListener("mouseleave", () => lenis.start());
+  overlay.addEventListener("touchstart", () => lenis.stop(), { passive: true });
+  overlay.addEventListener("touchend", () => lenis.start(), { passive: true });
+
+  //  Extra: prevent Lenis from hijacking wheel events inside overlay
+  overlay.addEventListener("wheel", (e) => {
+    e.stopPropagation(); // stop event from reaching window scroll
+  }, { passive: false });
+}
+
+
+
+
     $(window).trigger("scroll");
 
     new WOW().init();
@@ -25,6 +61,20 @@ $(document).ready(function(){
         $(this).toggleClass("active");
         $("body").toggleClass("overflow_hidden");
         $("header").toggleClass("active_menu_wrapper");
+
+        $(".header_search_box").removeClass("active");
+        $(".search_toggle").removeClass("active");
+    });
+
+    $(".search_toggle").on("click", function() {
+        $(".header_search_box").toggleClass("active");
+        $(this).toggleClass("active");
+
+         $(".header_nav").removeClass("active");
+        $("body").removeClass("overflow_hidden");
+        $("header").removeClass("active_menu_wrapper");
+        $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+        
     });
 
     var currentPage = window.location.pathname.split("/").pop();
@@ -70,7 +120,7 @@ if(window.matchMedia("(min-width: 1200px)").matches){
     });
 
 
-    $('.logo_link, .header_search_box').on('mouseenter', function() {
+    $('.logo_link, .header_search_box, .search_icon_header').on('mouseenter', function() {
         $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
         $(".header_nav_link").removeClass("active_dropdowen");
     });
@@ -377,7 +427,7 @@ const isMobile = window.innerWidth < 992;
 
 if ($('.marquee_trusted').length) {
     $('.marquee_trusted').infiniteslide({
-      speed: 70,
+      speed: 40,
       direction: isMobile ? 'left' : 'up',   // or 'down', 'left', 'right'
       pauseonhover: true,
       responsive: true
@@ -386,8 +436,8 @@ if ($('.marquee_trusted').length) {
 
   if ($('.marquee_trusted2').length) {
     $('.marquee_trusted2').infiniteslide({
-      speed: 70, 
-      direction: isMobile ? 'right' : 'down',   
+      speed: 40, 
+      direction: isMobile ? 'right' : 'up',   
       pauseonhover: true,
       responsive: true
     });
@@ -420,6 +470,21 @@ if ($('.marquee_trusted').length) {
       }
     });
   }
+
+
+// document.querySelectorAll(".journey_colm").forEach((item) => {
+//   gsap.to(item, {
+//     x: 0,
+//     opacity: 1,
+//     ease: "none",
+//     scrollTrigger: {
+//       trigger: item,
+//       start: "top 90%", // start animation when element is near bottom of viewport
+//       end: "top 80%",   // end when element reaches middle of viewport
+//       scrub: true,      // smooth scroll-sync animation
+//     }
+//   });
+// });
 
 
 
