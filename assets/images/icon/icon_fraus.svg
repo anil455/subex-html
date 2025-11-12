@@ -1,0 +1,39 @@
+<svg width="63" height="97" viewBox="0 0 63 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M62.1013 42.3871C62.106 42.3778 62.1019 42.3665 62.0923 42.3624C60.3025 41.5841 58.4851 40.861 56.6575 40.2156C54.8431 39.5748 52.8888 40.5435 52.1268 42.3105C51.7975 43.0743 51.4587 43.8334 51.1119 44.5865C50.6877 45.5077 51.1763 46.5923 52.1442 46.8953C52.9158 47.1369 53.375 47.9303 53.2015 48.7201C51.5973 56.0238 48.8308 62.9748 45.0552 69.3308C38.6281 80.1505 23.4821 80.1396 17.0644 69.3143C15.8795 67.3155 14.7939 65.258 13.8123 63.1492C9.78568 54.4983 15.4114 44.7472 24.9177 43.9216C28.1146 43.6439 31.326 43.5882 34.5251 43.7544C36.1845 43.8406 37.7847 43.0197 38.5328 41.536C39.7848 39.053 38.1005 36.1677 35.3237 36.0181C28.2756 35.6382 21.1868 36.2112 14.2599 37.7449C5.54224 39.6752 0.430376 48.5464 3.12566 57.0587C6.19108 66.74 11.1224 75.7223 17.6162 83.4997C24.6661 91.9432 37.4399 91.9511 44.4969 83.5136C54.1891 71.9253 60.3914 57.6604 62.0995 42.3932C62.0997 42.3911 62.1003 42.389 62.1013 42.3871Z" fill="url(#paint0_linear_176_33474)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M54.0694 29.19C54.0744 29.19 54.0781 29.1948 54.0769 29.1997C50.206 44.1259 42.367 57.7324 31.3794 68.53L31.3576 68.5492C31.1844 68.7015 30.9226 68.6931 30.7595 68.53C25.9126 63.746 21.6766 58.4374 18.1194 52.7012C16.6421 50.3191 18.024 47.258 20.7958 46.8407C22.4627 46.5898 24.0699 47.4289 24.969 48.8548C26.6735 51.558 28.5371 54.1802 30.5693 56.67C30.8152 56.9733 31.2748 56.9825 31.5326 56.6893L31.5496 56.67C36.7696 50.25 40.9294 43.02 43.8794 35.32L43.8848 35.3058C44.0306 34.9187 43.7792 34.4964 43.3694 34.44C35.8494 33.24 28.1894 33.13 20.6394 34.15C19.5497 34.2947 18.4666 34.4612 17.3893 34.6489C13.2804 35.3647 9.08871 33.2293 8.04956 29.19C7.98878 28.9692 8.11851 28.7408 8.33936 28.68C23.1894 24.56 38.9195 24.56 53.7695 28.68L53.9964 28.7424C54.092 28.7687 54.1481 28.8675 54.1218 28.963L54.062 29.1803C54.0607 29.1852 54.0643 29.19 54.0694 29.19Z" fill="url(#paint1_linear_176_33474)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M31.0503 6.09C33.7503 6.09 35.9402 8.28 35.9402 10.98C35.9402 13.68 33.7503 15.87 31.0503 15.87C28.3503 15.87 26.1602 13.68 26.1602 10.98C26.1602 8.28 28.3503 6.09 31.0503 6.09ZM42.0403 10.98C42.0403 4.89 37.1501 0 31.0601 0C24.9701 0 20.0801 4.89 20.0801 10.98C20.0801 17.07 25.0101 21.96 31.0601 21.96C37.1101 21.96 42.0403 17.03 42.0403 10.98Z" fill="url(#paint2_radial_176_33474)"/>
+<defs>
+<linearGradient id="paint0_linear_176_33474" x1="0" y1="66.02" x2="62.1099" y2="66.02" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFF33B" stop-opacity="0.1"/>
+<stop offset="0.06" stop-color="#FEE128" stop-opacity="0.14"/>
+<stop offset="0.17" stop-color="#FDCD12" stop-opacity="0.19"/>
+<stop offset="0.28" stop-color="#FDC70C" stop-opacity="0.2"/>
+<stop offset="0.67" stop-color="#F3903F" stop-opacity="0.4"/>
+<stop offset="0.89" stop-color="#ED683C"/>
+<stop offset="1" stop-color="#E93E3A"/>
+</linearGradient>
+<linearGradient id="paint1_linear_176_33474" x1="7.94945" y1="47.21" x2="54.1894" y2="47.21" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7800BF" stop-opacity="0.2"/>
+<stop offset="0.01" stop-color="#7C00B5" stop-opacity="0.2"/>
+<stop offset="0.12" stop-color="#96007C" stop-opacity="0.2"/>
+<stop offset="0.24" stop-color="#9F006A" stop-opacity="0.2"/>
+<stop offset="0.44" stop-color="#A40276" stop-opacity="0.3"/>
+<stop offset="0.67" stop-color="#DE1FFF"/>
+<stop offset="0.89" stop-color="#BF00AA"/>
+<stop offset="1" stop-color="#FF0080"/>
+</linearGradient>
+<radialGradient id="paint2_radial_176_33474" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(31.0502 10.98) scale(10.9801 10.98)">
+<stop offset="0.19" stop-color="#5FA3FF" stop-opacity="0.2"/>
+<stop offset="0.21" stop-color="#5497FB" stop-opacity="0.27"/>
+<stop offset="0.28" stop-color="#3678F1" stop-opacity="0.46"/>
+<stop offset="0.36" stop-color="#1E5FE9" stop-opacity="0.61"/>
+<stop offset="0.42" stop-color="#0D4EE3" stop-opacity="0.71"/>
+<stop offset="0.49" stop-color="#0343E0" stop-opacity="0.78"/>
+<stop offset="0.54" stop-color="#0040DF" stop-opacity="0.8"/>
+<stop offset="0.61" stop-color="#004EDF" stop-opacity="0.81"/>
+<stop offset="0.74" stop-color="#0075DF" stop-opacity="0.85"/>
+<stop offset="0.92" stop-color="#00B4DF" stop-opacity="0.92"/>
+<stop offset="1" stop-color="#00D5DF" stop-opacity="0.95"/>
+</radialGradient>
+</defs>
+</svg>

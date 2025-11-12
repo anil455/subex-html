@@ -132,15 +132,25 @@ if(window.matchMedia("(min-width: 1200px)").matches){
           $(".header_nav_link").removeClass("active_dropdowen");
       }
     });
-  $('.header_sub_nav_wrapper .container').on('mouseleave', function(e) {
-      var $this = $(this);
-      var offset = $this.offset();
-      var bottom = offset.top + $this.outerHeight();
-      if (e.pageY > bottom) {
-          $this.closest('.header_sub_nav_wrapper').removeClass('active_sub_nav');
-          $(".header_nav_link").removeClass("active_dropdowen");
-      }
-  });
+  // $('.header_sub_nav_wrapper .container').on('mouseleave', function(e) {
+  //     var $this = $(this);
+  //     var offset = $this.offset();
+  //     var bottom = offset.top + $this.outerHeight();
+  //     if (e.pageY > bottom) {
+  //         $this.closest('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+  //         $(".header_nav_link").removeClass("active_dropdowen");
+  //     }
+  // });
+
+
+
+  $('.header_dropdowen_wrapper_2').on('mouseleave', function () {
+  $(this)
+    .closest('.header_sub_nav_wrapper')
+    .removeClass('active_sub_nav');
+  $('.header_nav_link').removeClass('active_dropdowen');
+});
+
   $(document).on('mousemove', function(e) {
       const scrollbarThreshold = 25;
       if (e.clientX >= window.innerWidth - scrollbarThreshold) {
@@ -151,6 +161,228 @@ if(window.matchMedia("(min-width: 1200px)").matches){
 
 }
 
+
+
+$('.header_dropdowen_wrapper_2').each(function () {
+    var $wrapper = $(this);
+
+// Mouse enter (tab switch)
+$wrapper.find('.headermenu_tab_menu_list ul li a').on('mouseenter', function () {
+    var target = $(this).attr('data-rel');
+
+    // Active class switch only in this wrapper
+    $wrapper.find('.headermenu_tab_menu_list ul li a').removeClass('active');
+    $(this).addClass('active');
+
+    // Stop animations before showing content
+    $wrapper.find(".solution_output_wrapper").stop(true, true).hide();
+    $wrapper.find("#" + target).stop(true, true).fadeIn('fast');
+
+    return false;
+});
+
+
+    // Click scroll effect (mobile)
+    $wrapper.find('.headermenu_tab_menu_list ul li a').on('click', function () {
+        if ($(window).width() <= 1200) {
+            var $this = $(this);
+            var container = $wrapper.find('.headermenu_tab_menu_list ul');
+            var scrollLeft = $this.position().left + container.scrollLeft() - 20;
+            container.animate({
+                scrollLeft: scrollLeft
+            }, 400);
+        }
+    });
+});
+
+
+
+
+    // var $firstTab = $('.business_ansurrance_link_target1').first();
+    // $firstTab.addClass('active');
+
+    // var defaultTarget = $firstTab.attr('data-target');
+    // if (defaultTarget) {
+    //     $('#' + defaultTarget).show();
+    // }
+
+    // $('.business_ansurrance_link_target1').on('mouseenter', function () {
+    //     var target = $(this).attr('data-target');
+    //     $('.business_ansurrance_target').hide();
+    //     $('#' + target).fadeIn('slow');
+    //     $('.business_ansurrance_link_target1').removeClass('active');
+    //     $(this).addClass('active');
+    // });
+
+
+     if (window.matchMedia("(min-width: 1200px)").matches){
+$('.business_ansurrance_row').each(function () {
+    var $row = $(this);
+
+    // Get first tab and activate it
+    var $firstTab = $row.find('.business_ansurrance_link_target1').first();
+    $firstTab.addClass('active');
+
+    var defaultTarget = $firstTab.attr('data-target');
+    if (defaultTarget) {
+        $row.find('#' + defaultTarget).show();
+    }
+
+    // Tab hover behavior (scoped inside this row)
+    $row.find('.business_ansurrance_link_target1').on('mouseenter', function () {
+        var target = $(this).attr('data-target');
+
+        // Hide only inside this row
+        $row.find('.business_ansurrance_target').hide();
+
+        // Show the hovered tab target
+        $row.find('#' + target).fadeIn('fast');
+
+        // Active state only for this row
+        $row.find('.business_ansurrance_link_target1').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
+
+
+$('.solution2_link').each(function() {
+    var targetId = $(this).attr('data-target');
+    // Check agar matching element exist karta hai
+    if (!$('#' + targetId).length) {
+        // Agar nahi milta to icon hide kar do
+        $(this).find('.icon_gray_header_2').hide();
+    }
+});
+
+$('.business_ansurrance_row').each(function () {
+  var $currentRow = $(this);
+
+  function showFirstChildTarget($parentTarget) {
+    if ($parentTarget.css('display') === 'block') {
+      var $firstSecondLevelLink = $parentTarget.find('.second-level-dropdowen').first();
+      var firstTargetId = $firstSecondLevelLink.attr('data-target');
+
+      if ($('#' + firstTargetId).length) { // <- global ID
+        $currentRow.find('.second-level-dropdowen').removeClass('active');
+        $firstSecondLevelLink.addClass('active');
+
+        $currentRow.find('.third_level_target').stop(true, true).hide();
+        $('#' + firstTargetId).stop(true, true).fadeIn(100); // <- global ID
+      }
+    }
+  }
+
+  $currentRow.find('.business_ansurrance_target').each(function () {
+    showFirstChildTarget($(this));
+  });
+
+  $currentRow.on('mouseenter', '.second-level-dropdowen', function () {
+    var $hoveredLink = $(this);
+    var targetId = $hoveredLink.attr('data-target');
+
+    if ($('#' + targetId).length) { // <- global ID
+      $currentRow.find('.third_level_target').stop(true, true).hide();
+      $currentRow.find('.second-level-dropdowen').removeClass('active');
+
+      $hoveredLink.addClass('active');
+      $('#' + targetId).stop(true, true).fadeIn(100); // <- global ID
+    } else {
+      $currentRow.find('.third_level_target').stop(true, true).fadeOut(150);
+      $currentRow.find('.second-level-dropdowen').removeClass('active');
+    }
+  });
+
+  const mutationObserver = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.attributeName === 'style') {
+        var $targetElement = $(mutation.target);
+        if ($targetElement.hasClass('business_ansurrance_target')) {
+          if ($targetElement.css('display') === 'block') {
+            showFirstChildTarget($targetElement);
+          } else {
+            $targetElement.find('.second-level-dropdowen.active').each(function () {
+              var targetId = $(this).attr('data-target');
+              $('#' + targetId).stop(true, true).fadeOut(50); // <- global ID
+            });
+          }
+        }
+      }
+    });
+  });
+
+  $currentRow.find('.business_ansurrance_target').each(function () {
+    mutationObserver.observe(this, { attributes: true, attributeFilter: ['style'] });
+  });
+});
+
+
+
+}
+
+
+    if (window.matchMedia("(max-width: 1199px)").matches){
+
+      $('.mobile_add_class').click(function () {
+      const $desc = $(this).closest('.solution2_li').find('.mobile_menu_dropdowen_header2');
+      const isVisible = $desc.is(':visible');
+      $('.mobile_menu_dropdowen_header2').slideUp(200);
+      $('.solution2_li').removeClass("active");
+      if (!isVisible) {
+        $desc.stop(true, true).slideDown(200);
+        $(this).closest('.solution2_li').addClass("active");
+      }
+    });
+
+    $('.solution2_li').each(function() {
+        const $li = $(this);
+        const $arrow = $li.find('.mobile_add_class');
+        const $dropdown = $li.find('.mobile_menu_dropdowen_header2');
+
+        if ($dropdown.length === 0) {
+            $arrow.addClass('arrow-hide');
+        } else {
+            $arrow.removeClass('arrow-hide');
+        }
+    });
+
+
+     $('.mobile_menu_dropdowen_item_header2').click(function () {
+      const $desc = $(this).closest('.mobile_menu_dropdowen_list_header2').find('.mobile_menu_third_level');
+      const isVisible = $desc.is(':visible');
+      $('.mobile_menu_third_level').slideUp(200);
+      $('.mobile_menu_dropdowen_list_header2').removeClass("active");
+      if (!isVisible) {
+        $desc.stop(true, true).slideDown(200);
+        $(this).closest('.mobile_menu_dropdowen_list_header2').addClass("active");
+      }
+    });
+
+    $('.mobile_menu_dropdowen_list_header2').each(function() {
+        const $li = $(this);
+        const $arrow = $li.find('.mobile_menu_dropdowen_item_header2');
+        const $dropdown = $li.find('.mobile_menu_third_level');
+
+        if ($dropdown.length === 0) {
+            $arrow.addClass('arrow-hide');
+        } else {
+            $arrow.removeClass('arrow-hide');
+        }
+    });
+    
+
+    }
+
+
+
+
+
+
+
+
+
+
+    
 
    $('.header_sub_nav_wrapper_inner').each(function() {
   var $wrappertabinner = $(this);

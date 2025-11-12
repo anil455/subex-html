@@ -215,6 +215,65 @@
 
 /*---header---end---here---*/
 
+
+/*---header2----start--here---*/
+
+.mobile_menu_dropdowen_header2{display: none;}
+.mobile_add_class, .mobile_menu_dropdowen_item_header2, .mobile_dropdowen_header_third_level_item{display: block;padding: 15px 30px 15px 0px;border-bottom: 1px solid #ccc;}
+.business_ansurrance_colm{width: 100%;}
+.solution2_link, .headermenu_tab_menu_list ul li a{font-size: 18px;}
+.business_ansurrance_row .solution2_li{margin: 0px;}
+.mobile_add_class, .headermenu_tab_menu_list ul li a, .mobile_menu_dropdowen_item_header2, .mobile_menu_dropdowen_item_header2,
+.mobile_dropdowen_header_third_level_item{font-size: 16px;}
+.icon_gray_header_2{visibility: visible;transform: translate(0px, -50%) rotate(90deg);}
+.business_ansurrance_ul .solution2_li{border-top: 1px solid #ccc;}
+
+.mobile_menu_dropdowen_header2{padding: 0px;background-color: #fdf4f0;}
+.mobile_menu_dropdowen_item_header2, .mobile_menu_dropdowen_item_header2,
+ .mobile_dropdowen_header_third_level_item, .mobile_menu_third_level_item{color: #000;padding-left: 10px;}
+
+.solution2_li.active .mobile_add_class, .mobile_menu_dropdowen_list_header2.active .mobile_menu_dropdowen_item_header2{color: #F17A3F;font-weight: 500;}
+.solution2_li.active .mobile_add_class .icon_gray_header_2 svg path, 
+.mobile_menu_dropdowen_list_header2.active .icon_gray_header_2 svg path{stroke: #F17A3F;}
+.solution2_li.active .mobile_add_class .icon_gray_header_2, .mobile_menu_dropdowen_list_header2.active .icon_gray_header_2 {
+  transform: translate(0px, -50%) rotate(270deg);
+}
+.arrow-hide .icon_gray_header_2{display: none;}
+.mobile_menu_dropdowen_item_header2{position: relative;}
+.icon_gray_header_2{right: 8px;}
+.mobile_dropdowen_header_third_level{display: none;}
+.mobile_menu_third_level_item{padding: 10px;}
+.mobile_menu_third_level{border-bottom: 1px solid #ccc;padding: 10px 0px;}
+
+.mobile_menu_third_level{display: none;}
+.services_wrapper_header2{padding-left: 0px;}
+.services_colm_card{width: 33.333%;}
+.product_wrapper2 .solution_right_colm{padding-left: 0px;}
+.product_ul2{padding-top: 20px;}
+
+
+
+/*---header2---end---here--*/
+
+
+.solution_left_colm{width: 100%;border-right: none;border-bottom: 1px solid #ccc;
+   border-top: 1px solid #ccc; padding: 5px 0px;}
+.headermenu_tab_menu_list ul li{margin: 0px;display: inline-block;}
+.icon_menu2_hover{display: none !important;}
+.headermenu_tab_menu_list ul li a{padding: 10px 15px;}
+.header2_menu_title{display: none;}
+.header_dropdowen_wrapper_2{padding: 15px;}
+.title_Card_colm_top_row_header2{margin-top: 20px;}
+.solution_right_colm{width: 100%;}
+
+.headermenu_tab_menu_list ul{white-space: nowrap;overflow: auto;scrollbar-width: none;}
+
+
+
+
+
+
+
 /* .native_ai_card{flex: 1 1 auto;} */
 
 
@@ -265,6 +324,10 @@
   /*--header--start---here--*/
   .header_tab_colm{width: 50%;}
   .one_line_card_wrapper{width: 100%;}
+  .services_colm_card{width: 50%;}
+  .about-header_colm2{width: 50%;}
+  .about-header_colm2:nth-child(3n) .about-header_colm_inner2{border-right: 1px solid #D1D3D4;}
+  .about-header_colm2:nth-child(2n) .about-header_colm_inner2{border-right: none;}
 
   /*--header--end---here--*/
 
@@ -356,6 +419,27 @@
     right: 48px;
 }
 .header_search_box.active{width: calc(100% - 63px);}
+
+/*---header2---start---here--*/
+.title_Card_colm_top_row_header2{margin: 15px 0px;}
+.solution2_colm{width: 100%;}
+.solution2_inner_box{border-left: none;padding-left: 0px;}
+.header_dropdowen_wrapper_2 ul li, .header_dropdowen_wrapper_2 ul li:first-child{margin-top: 10px;}
+.solution2_header_row{margin-top: -10px;}
+
+.business_ansurrance_inner_box{padding: 0px;}
+.business_ansurrance_row .business_ansurrance_ul .solution2_li{margin-top: 0px;}
+.mobile_menu_dropdowen_list_header2{margin-top: 0px !important;}
+.services_colm_card{width: 100%;}
+.services_row_header2{flex-wrap: wrap;margin-top: -20px;}
+.about-header_colm2{width: 100%;}
+.about-header_colm_inner2{border: none !important;border-bottom: 1px solid #D1D3D4 !important;margin-bottom: 30px;
+  padding-bottom: 30px; height: initial;}
+  .title_about_header_dropdowen{font-size: 14px;}
+  .link_about_dropdowen{width: 100%;}
+
+
+
 
 /*----footer---start---here---*/
 .footer_colm{width: 50% !important;margin-top: 30px;}

@@ -269,6 +269,98 @@
 
 
 
+     /*-----hedear----dropdowen----2---start----here---*/
+     .header_dropdowen_wrapper_2{
+      display: flex;flex-wrap: wrap;margin: 0px -15px;
+      background: #fff;padding: 50px;padding-left: 0px;border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;
+     }
+     .solution_left_colm{width: 35%;padding-right: 10px;}
+     .solution_right_colm{width: 65%;}
+
+
+     .header_dropdowen_wrapper_2 ul li{list-style: none;padding: 0px;}
+     .header2_menu_title{font-size: 18px;font-weight: 700;padding-left: 50px;margin-bottom: 10px;}
+      .headermenu_tab_menu_list ul li{display: block;margin: 4px 0px;}
+     .headermenu_tab_menu_list ul li a{display: block;padding: 10px 50px;font-size: 16px;font-weight: 500;color: #414042;
+    transition: all 0.3s; border-radius: 16px;position: relative;}
+   .headermenu_tab_menu_list ul li a.active{color: #F17A3F;background: #F1F2F2;}
+   .icon_menu2_hover svg{width: 100%;height: initial;}
+      .icon_menu2_hover{width: 20px;position: absolute;top: 50%;right: 15px;transform: translate(0px, -50%);visibility: hidden;
+      line-height: 0px;}
+      .headermenu_tab_menu_list ul li a.active .icon_menu2_hover{visibility: visible;}
+     .solution2_header_row{display: flex;flex-wrap: wrap;margin: 0px -15px;}
+     .solution2_colm{padding: 0px 15px;width: 33.333%;}
+     .solution2_li{margin-top: 15px;}
+     .solution2_li:first-child{margin-top: 0px;}
+     .solution2_link{font-size: 16px;font-weight: 300;color: #000;transition: all 0.3s;}
+     .solution2_link:hover{color: #F17A3F;}
+     .title_font_right{font-size: 18px;font-weight: 300;}
+     .title_font_right strong{font-weight: 700;}
+     .title_Card_colm_top_row_header2{display: flex;align-items: center;margin-bottom: 20px;padding-left: 15px;}
+     .colm_icon_header_card2 img{width: 100%; height: initial;}
+     .colm_icon_header_card2{width: 70px;}
+     .title_right_card_header2{width: calc(100% - 90px);padding-left: 10px;}
+     .solution2_inner_box{height: 100%;border-left: 1px solid #D1D3D4;padding-left: 15px;}
+     .solution2_colm:first-child .solution2_inner_box{border-left: none;}
+     .solution_left_colm{border-right: 1px solid #D1D3D4;}
+     .solution_output_wrapper{display: none;}
+
+     .business_ansurrance_row{display: flex;margin: 0px;}
+     .business_ansurrance_colm{width: 33.333%;padding: 0px;}
+     .business_ansurrance_colm:first-child .business_ansurrance_inner_box{border-left: none;}
+     .business_ansurrance_inner_box{height: 100%;border-left: 1px solid #D1D3D4;padding-left: 15px;padding-right: 10px;}
+     .business_ansurrance_link{padding-right: 20px;position: relative;display: block;}
+     .icon_gray_header_2{width: 20px;line-height: 0px;position: absolute;top: 50%;right: 0px; transform: translate(0px, -50%);
+   visibility: hidden;}
+     .business_ansurrance_link.active .icon_gray_header_2{visibility: visible;}
+     .business_ansurrance_link.active{font-weight: 600;color: #000;}
+     .icon_gray_header_2 svg{width: 100%;height: initial;}
+     .business_ansurrance_target{display: none;}
+     .third_level_target{display: none;}
+
+     .services_wrapper_header2{padding-left: 50px;width: 100%;}
+     .services_wrapper_header2 .header2_menu_title{padding-left: 15px;}
+     .services_row_header2{display: flex;margin: 0px -15px;flex-wrap: wrap;}
+     .services_colm_card{padding: 0px 15px;width: 25%;margin-top: 20px;}
+     .services_colm_card .title_Card_colm_top_row_header2{padding-left: 0px;margin-bottom: 0px;}
+      .title_Card_colm_top_row_header2{color: #000;}
+      .product_wrapper2 .header2_menu_title{margin-bottom: 30px;}
+      .product_wrapper2 .solution_right_colm{padding-left: 30px;}
+      .product_li2{margin-bottom: 20px;}
+      .product_ul2{padding-top: 50px;}
+      .product_li2:last-child{margin-bottom: 0px;}
+      .product_link2{color: #000;font-size: 16px;transition: all 0.3s;}
+      .product_link2:hover{color: #F17A3F;}
+      .about_header_row2{display: flex;flex-wrap: wrap;margin: 0px -15px;padding-top: 20px;}
+      .about-header_colm2{width: 33.333%;padding: 0px 15px;}
+      .about-header_colm_inner2{height: 100%;border-right: 1px solid #D1D3D4;height: 100%;padding-bottom: 50px;}
+      .title_about_header_dropdowen{font-size: 16px;color: #000;margin-bottom: 20px;font-weight: 700;;}
+      
+      .link_about_dropdowen{font-size: 16px;color: #000;width: 80%;display: block;transition: all 0.3s}
+      .link_about_dropdowen:hover{color: #F17A3F;}
+      .about-header_colm2:nth-child(3n) .about-header_colm_inner2 {
+         border: none;
+      }
+     
+
+      @media screen and (min-width: 1200px){
+      .headermenu_tab_menu_list ul li a:hover{color: #F17A3F;background: #F1F2F2;}
+      .headermenu_tab_menu_list ul li a:hover .icon_menu2_hover{visibility: visible;}
+      .business_ansurrance_link:hover .icon_gray_header_2{visibility: visible;}
+      .business_ansurrance_link:hover {font-weight: 600;color: #000;}
+      .mobile_menu_dropdowen_header2{display: none;}
+      .ecosystem_row .business_ansurrance_colm{width: 42%;}
+      
+      }
+
+      @media screen and (max-width: 1400px){
+         .solution2_link{font-size: 14px;}
+         .icon_menu2_hover{width: 17px;}
+         .header2_menu_title, .title_font_right{font-size: 16px;}
+         .link_about_dropdowen{font-size: 14px;}
+      }
+
+
 
 
     /*----footer---start---here---*/
