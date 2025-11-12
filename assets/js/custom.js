@@ -109,16 +109,30 @@ if (overlay) {
     
 if(window.matchMedia("(min-width: 1200px)").matches){
 
-   $('.header_nav_link').on('mouseenter', function() {
-        var target = $(this).data('target');
-        $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
-        $(".header_nav_link").removeClass("active_dropdowen");
-        if (target) {
-            $('#' + target).addClass('active_sub_nav');
-            $(this).addClass("active_dropdowen");
-        }
+  //  $('.header_nav_link').on('mouseenter', function() {
+  //       var target = $(this).data('target');
+  //       $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+  //       $(".header_nav_link").removeClass("active_dropdowen");
+  //       if (target) {
+  //           $('#' + target).addClass('active_sub_nav');
+  //           $(this).addClass("active_dropdowen");
+  //       }
         
-    });
+  //   });
+
+  $('.header_nav_link').on('mouseenter', function() {
+    var target = $(this).data('target');
+
+    $('.header_sub_nav_wrapper').removeClass('active_sub_nav');
+    $('.header_nav_link').removeClass('active_dropdowen');
+
+    if (target && $('#' + target).length) {
+        // sirf tab active class add ho jab target exist kare
+        $('#' + target).addClass('active_sub_nav');
+        $(this).addClass('active_dropdowen');
+    }
+});
+
 
 
     $('.logo_link, .header_search_box, .search_icon_header').on('mouseenter', function() {
@@ -144,7 +158,7 @@ if(window.matchMedia("(min-width: 1200px)").matches){
 
 
 
-  $('.header_dropdowen_wrapper_2').on('mouseleave', function () {
+  $('.header_dropdowen_wrapper_2, .header_sub_nav_wrapper_inner').on('mouseleave', function () {
   $(this)
     .closest('.header_sub_nav_wrapper')
     .removeClass('active_sub_nav');
@@ -757,6 +771,119 @@ if ($('.marquee_trusted').length) {
           });
         }
 
+        
+
+
+         // LEFT cards (animate inner only)
+function animateJourney(xValue) {
+  gsap.utils.toArray(".journy_left").forEach((elem) => {
+    gsap.fromTo(elem,
+      { x: xValue },
+      {
+        x: 0,
+        ease: "none",
+        scrollTrigger: {
+          trigger: elem,
+          start: "top bottom",
+          end: "top center",
+          scrub: 0.8,
+        }
+      }
+    );
+  });
+}
+
+ScrollTrigger.matchMedia({
+  "(min-width: 1025px)": () => animateJourney(-200),
+  "(max-width: 1024px) and (min-width: 992px)": () => animateJourney(-150),
+  "(max-width: 991px) and (min-width: 768px)": () => animateJourney(-100),
+  "(max-width: 767px)": () => animateJourney(-50),
+});
+
+  // RIGHT cards (animate inner only)
+function animateRightJourney(xValue) {
+  gsap.utils.toArray(".jouney_right").forEach((elem) => {
+    gsap.fromTo(elem,
+      { x: xValue },
+      {
+        x: 0,
+        ease: "none",
+        scrollTrigger: {
+          trigger: elem,
+          start: "top bottom",
+          end: "top center",
+          scrub: 0.8,
+        }
+      }
+    );
+  });
+}
+
+ScrollTrigger.matchMedia({
+  "(min-width: 1025px)": () => animateRightJourney(200),
+  "(max-width: 1024px) and (min-width: 992px)": () => animateRightJourney(150),
+  "(max-width: 991px) and (min-width: 768px)": () => animateRightJourney(100),
+  "(max-width: 767px)": () => animateRightJourney(50),
+});
+
+
+
+
+
+$(".about_pcc_video_box").each(function () {
+  const box = $(this);
+  const video = box.find(".videoPlayer_subex_proton").get(0);
+
+  // Initial hide
+  box.find(".video_wrapper_subex_proton").hide();
+
+  // --- Play from thumbnail ---
+  box.find(".play_btn_video_box").on("click", function () {
+    box.find(".video_thumbnail_subex_proton").hide();
+    box.find(".video_wrapper_subex_proton").show();
+    video.play();
+    box.find(".play_control_subex_proton").removeClass("active");
+    box.find(".pause_control_subex_proton").addClass("active");
+  });
+
+  // --- Play control ---
+  box.find(".play_control_subex_proton").on("click", function () {
+    video.play();
+    $(this).removeClass("active");
+    box.find(".pause_control_subex_proton").addClass("active");
+  });
+
+  // --- Pause control ---
+  box.find(".pause_control_subex_proton").on("click", function () {
+    video.pause();
+    $(this).removeClass("active");
+    box.find(".play_control_subex_proton").addClass("active");
+  });
+
+  // --- Update progress ---
+  video.addEventListener("timeupdate", function () {
+    const progress = (video.currentTime / video.duration) * 100;
+    box.find(".progress-fill_subex_proton").css("width", progress + "%");
+  });
+
+  // --- Click to seek ---
+  box.find(".progress_bar_subex_proton").on("click", function (e) {
+    const bar = $(this);
+    const offset = e.pageX - bar.offset().left;
+    const percent = offset / bar.width();
+    video.currentTime = percent * video.duration;
+  });
+
+  // --- Video ended ---
+  video.addEventListener("ended", function () {
+    box.find(".video_wrapper_subex_proton").hide();
+    box.find(".video_thumbnail_subex_proton").show();
+    video.currentTime = 0;
+    box.find(".progress-fill_subex_proton").css("width", "0%");
+    box.find(".pause_control_subex_proton").removeClass("active");
+    box.find(".play_control_subex_proton").addClass("active");
+  });
+});
 
 
 });
