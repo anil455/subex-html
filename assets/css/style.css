@@ -1288,6 +1288,11 @@ a.trans-btn:hover{
    .goverence_detail_box{padding-left: 60px;padding-top: 15px;}
    .goverence_detail_box p{font-size: 17px;font-weight: 400;}
 
+   .social_link li{display: inline-block;}
+    .social_link li a{display: block;width: 30px;}
+    .social_link li a svg{width: 100%; height: initial;}
+    .social_link li a:hover svg circle{fill: #000;stroke: #000;}
+
    @media screen and (max-width: 1400px){
 .investor_video_wrapper  .video_thumbnail_subex_proton img, .investor_video_wrapper  .video_wrapper_subex_proton video {
       height: 450px;
