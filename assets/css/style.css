@@ -941,3 +941,426 @@ color: #f17b40;}
 .progress-fill_subex_proton {width: 0%;height: 100%;background: #f17b40;border-radius: 5px;transition: width 0.1s linear;}
 
    
+
+
+
+
+
+/*--- My Css---*/
+   .color-fff{color: #fff;}
+   .mt10{margin-top: 10px;}
+   .mt20{margin-top: 20px;}
+   .pt20{padding-top: 20px;}
+   .small-text{font-size: 12px; font-weight: 300;}
+   .bt-orange {border-top: 1px solid #F17A3F;}
+a.solid-btn {
+    background: #F17A3F;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid #F17A3F;
+}
+a.solid-btn:hover {
+    background: #fff;
+    color: #F17A3F;
+    border: 1px solid #F17A3F;
+}
+a.trans-btn{
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid #F17A3F;
+}
+a.trans-btn:hover{
+    background: #F17A3F;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid #F17A3F;
+}
+.ccc{border-top: 1px solid #F17A3F;}
+
+   .banner-button-wrapper {
+       display: flex;
+       column-gap: 20px;
+   }
+
+   .banner-subex {
+       min-height: 700px;
+       display: flex;
+       align-items: center;
+       background-image: url(../images/investor/banner-bg.jpg);
+       background-size: cover;
+       background-position: center;
+   }
+   .banner-btn-group {
+       display: flex;
+       flex-direction: row;
+       column-gap: 40px;
+   }
+.banner-subex .container {
+    margin-left: 0;
+}
+.banner-subex-content p{
+   font-size: 16px;
+   line-height: 18px;
+   color: #fff;
+   font-weight: 400;
+}
+   .about-subex{
+      background-image: url(https://inclusivity.agency/jlf/video.gif);
+       background-size: cover;
+       background-color: #fff;
+       position: relative;
+       background-position: center center;
+       background-repeat: no-repeat;
+   }
+   .about-subex-video{position: relative;}
+
+   .about-subex-content {
+       padding: 50px;
+       border: 1px solid #F17A3F;
+       border-radius: 25px;
+       position: relative;
+       background: #ffffffa3;
+      }
+      .about-subex-video video {
+          height: 100%;
+          width: 100%;
+      }
+      /*.video-container-txt {
+          position: absolute;
+          top: 50%;
+          left: 0px;
+          right: 0px;
+          width: 100%;
+          transform: translate(0px, -50%);
+          z-index: 2;
+      }*/
+
+   .featured-video{
+         background-image: url(../images/investor/video-bg.jpg);
+       background-size: cover;
+       background-color: #fff;
+    }
+
+    .featured-video-wrapper img {
+       border-radius: 84px;
+   }
+   
+   .quick-access{
+     background-image: url(../images/investor/quick-access-bg.jpg);
+     background-size: cover;
+   }
+
+   .quick-access-list-wrapper {
+       display: flex;
+       flex-direction: row;
+       column-gap: 40px;
+   }
+
+   .quick-access-list {
+         border: 1px solid #F17A3F;
+       border-radius: 20px;
+       padding: 27px 30px;
+       background-color: #231f20e3;
+       max-width: 570px;
+       width: 100%;
+       margin: 25px 0px;
+   }
+
+   .quick-access-list p {
+       font-size: 18px;
+       line-height: 28px;
+        color: #fff;
+   }
+
+   .quick-access-list h3 {
+       font-size: 26px;
+       line-height: 36px;
+           margin-bottom: 5px;
+           color: #fff;
+   }
+   .governance-corporate-info{
+      background-image: url(../images/investor/governance-corporate-info.jpg);
+      background-size: cover;
+          background-attachment: fixed;
+   }
+
+/* ===== Accordion Scroll + Hover Styling ===== */
+    .accordion {
+      border-radius: 8px;
+      padding: 15px 0px;
+      transition: all 0.4s ease;
+      overflow: hidden;
+      opacity: 0.8;
+      transform: scale(0.98);
+      cursor: pointer;
+          margin-top: 25px;
+    }
+
+    .accordion:hover {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .accordion:hover h2 {
+    color: #F17A3F;
+}
+
+    .accordion.active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .accordion-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      user-select: none;
+    }
+
+    .icon {
+      width: 28px;
+      height: 28px;
+      border: 2px solid #000;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      flex-shrink: 0;
+      color: #000;
+      transition: all 0.3s ease;
+    }
+
+    .accordion-header h2 {
+      font-size: 26px;
+      line-height: 36px;
+      font-weight: 400;
+      color: #000;
+      margin: 0;
+    }
+
+    
+
+    .accordion-content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+      padding-left: 43px;
+      gap: 4px;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+    }
+
+    .accordion-content .subtext {
+      font-size: 16px;
+       color: #000;
+       line-height: 26px;
+    }
+
+    /* Expanded (active or hover) */
+    .accordion.active .accordion-content,
+    .accordion:hover .accordion-content {
+      margin-top: 10px;
+      opacity: 1;
+      max-height: 200px;
+    }
+
+    .accordion.active .icon,
+    .accordion:hover .icon {
+      border-color: #f26c23;
+      color: #f26c23;
+    }
+
+
+
+    /*recent press and features*/
+
+    .recent-press-features{
+      background-image: url(../images/investor/recent-press-features.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+   }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+      letter-spacing: 0.5px;
+    }
+
+    .cards-container {
+      display: flex;flex-wrap: wrap;margin: 0px -20px;
+    }
+    .card_recent_press{width: 33.333%;padding: 0px 20px;}
+
+    .card {
+      background: #fff;
+      border-radius: 40px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+      padding: 60px 40px;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h4 {
+         color: #F17A3F;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    font-weight: bold;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .card p {
+      font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    color: #000;
+    }
+
+    .date-location {
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 12px;
+    }
+
+    .card .btn {
+      align-self: flex-start;
+      background-color: #F17A3F;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #e65a20;
+      transform: scale(1.05);
+    }
+
+    .investor_video_wrapper{margin-top: 50px;}
+    
+   .investor_video_wrapper  .video_thumbnail_subex_proton img, .investor_video_wrapper  .video_wrapper_subex_proton video {
+      height: 530px;
+   }
+
+   .goverence_detail_box{display: none;}
+   .goverence_title_boc{position: relative;padding-left: 60px;font-size: 26px;line-height: 1.3;cursor: pointer;}
+   .governce_icon_box{position: absolute;top: -1px;left: 0px;width: 32px;height: 32px;border-radius: 5px;border: 2px solid #000;
+   display: flex;justify-content: center;}
+   .minus_gov{display: none;}
+   .plus_gov, .minus_gov{    font-size: 26px;
+    position: relative;
+    top: -2px;}
+   .goverence_acc_box{margin-bottom: 50px;}
+   .goverence_accordian_wrap{margin-top: 50px;}
+   .goverence_acc_box.active .minus_gov{display: block;top: -4px;}
+   .goverence_acc_box.active .plus_gov{display: none;}
+   .goverence_detail_box{padding-left: 60px;padding-top: 15px;}
+   .goverence_detail_box p{font-size: 17px;font-weight: 400;}
+
+   @media screen and (max-width: 1400px){
+.investor_video_wrapper  .video_thumbnail_subex_proton img, .investor_video_wrapper  .video_wrapper_subex_proton video {
+      height: 450px;
+   }
+   .goverence_title_boc{font-size: 22px;}
+   }
+
+
+/*RESPNSIVE*/
+@media screen and (max-width: 767px) {
+   .banner-subex {
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/investor/banner-bg.jpg);
+    background-position: 60% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+   .banner-subex-content h1 {
+    font-size: 22px;
+}
+.featured-video-wrapper img {
+    border-radius: 35px;
+}
+.banner-btn-group {
+    flex-direction: column;
+}
+  .quick-access-list-wrapper { flex-direction: column;}
+  .about-subex-content {padding: 25px}
+  .quick-access-list {
+    max-width: 100%;
+    width: 100%;
+}
+.accordion-header h2 {
+    font-size: 20px;
+    line-height: 26px;
+}
+.accordion {
+    margin-top: 10px;
+}
+.m-fdr{flex-direction: row;}
+.m-cg10{column-gap: 10px;}
+.m-aic{align-items: center;}
+
+    .investor_video_wrapper .video_thumbnail_subex_proton img, .investor_video_wrapper .video_wrapper_subex_proton video {
+        height: 258px;
+    }
+
+}
+
+
+.small_font_dec{font-size: 14px;}
+
+@media screen and (max-width: 991px){
+   .card_recent_press{width: 50%;padding: 0px 10px;margin-bottom: 20px;}
+   .cards-container{margin: 0px -10px;}
+}
+
+@media screen and (max-width: 767px){
+   .card_recent_press{width: 100%;}
+   .goverence_title_boc{font-size: 20px;}
+   .goverence_title_boc{padding-left: 38px;}
+   .governce_icon_box{width: 28px;height: 28px;}
+   .plus_gov, .minus_gov {
+    font-size: 21px;
+    position: relative;
+    top: 0px;}
+    .governce_icon_box{top: 0px;}
+    .goverence_detail_box{padding-left: 38px;}
+    .goverence_detail_box p{font-size: 16px;}
+    .goverence_acc_box:nth-of-type(2),  .goverence_acc_box:nth-of-type(4){top: 2px;}
+    .goverence_acc_box:last-child{margin-bottom: 0px;}
+    .goverence_acc_box.active .minus_gov{top: -2px;}
+}

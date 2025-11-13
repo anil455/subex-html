@@ -577,7 +577,7 @@ gsap.timeline({
 
 
 const section_scale4 = document.querySelector('.leadership_section');
-if (section_scale3) {
+if (section_scale4) {
 gsap.timeline({
   scrollTrigger: {
     trigger: section_scale4,
@@ -588,6 +588,57 @@ gsap.timeline({
   }
 })
 .fromTo(".leadership_section",
+  { 
+    scale: 0.90,
+    borderRadius: "30px"
+  },
+  { 
+    scale: 1,
+    borderRadius: "0px",
+    ease: "power2.out",
+    duration: 2
+  }
+);
+}
+
+
+const section_scale5 = document.querySelector('.quick-access');
+if (section_scale5) {
+gsap.timeline({
+  scrollTrigger: {
+    trigger: section_scale5,
+    start: 'top bottom',
+    end: 'top+=80 top',
+    scrub: 1,
+    markers: false
+  }
+})
+.fromTo(".quick-access",
+  { 
+    scale: 0.90,
+    borderRadius: "30px"
+  },
+  { 
+    scale: 1,
+    borderRadius: "0px",
+    ease: "power2.out",
+    duration: 2
+  }
+);
+}
+
+const section_scale6 = document.querySelector('.featured-video');
+if (section_scale6) {
+gsap.timeline({
+  scrollTrigger: {
+    trigger: section_scale6,
+    start: 'top bottom',
+    end: 'top+=80 top',
+    scrub: 1,
+    markers: false
+  }
+})
+.fromTo(".featured-video",
   { 
     scale: 0.90,
     borderRadius: "30px"
@@ -884,6 +935,19 @@ $(".about_pcc_video_box").each(function () {
     box.find(".play_control_subex_proton").addClass("active");
   });
 });
+
+
+
+ $('.goverence_title_boc').click(function () {
+      const $desc = $(this).closest('.goverence_acc_box').find('.goverence_detail_box');
+      const isVisible = $desc.is(':visible');
+      $('.goverence_detail_box').slideUp(200);
+      $('.goverence_acc_box').removeClass("active");
+      if (!isVisible) {
+        $desc.stop(true, true).slideDown(200);
+        $(this).closest('.goverence_acc_box').addClass("active");
+      }
+    });
 
 
 });
