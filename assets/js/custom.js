@@ -550,6 +550,131 @@ gsap.timeline({
 );
 }
 
+const section_scale_samless_section = document.querySelector('.samless_section');
+if (section_scale_samless_section) {
+gsap.timeline({
+  scrollTrigger: {
+    trigger: section_scale_samless_section,
+    start: 'top bottom',
+    end: 'top+=80 top',
+    scrub: 1,
+    markers: false
+  }
+})
+.fromTo(".samless_section",
+  { 
+    scale: 0.90,
+    borderRadius: "30px"
+  },
+  { 
+    scale: 1,
+    borderRadius: "0px",
+    ease: "power2.out",
+    duration: 2
+  }
+);
+}
+
+const section_scale_fraud_home = document.querySelector('.fraud_home');
+if (section_scale_fraud_home) {
+gsap.timeline({
+  scrollTrigger: {
+    trigger: section_scale_fraud_home,
+    start: 'top bottom',
+    end: 'top+=80 top',
+    scrub: 1,
+    markers: false
+  }
+})
+.fromTo(".fraud_home",
+  { 
+    scale: 0.90,
+    borderRadius: "30px"
+  },
+  { 
+    scale: 1,
+    borderRadius: "0px",
+    ease: "power2.out",
+    duration: 2
+  }
+);
+}
+
+const section_scale_brand_core = document.querySelector('.brand_core');
+if (section_scale_brand_core) {
+gsap.timeline({
+  scrollTrigger: {
+    trigger: section_scale_brand_core,
+    start: 'top bottom',
+    end: 'top+=80 top',
+    scrub: 1,
+    markers: false
+  }
+})
+.fromTo(".brand_core",
+  { 
+    scale: 0.90,
+    borderRadius: "30px"
+  },
+  { 
+    scale: 1,
+    borderRadius: "0px",
+    ease: "power2.out",
+    duration: 2
+  }
+);
+}
+
+const section_scale_how_we_work_about = document.querySelector('.how_we_work_about');
+if (section_scale_how_we_work_about) {
+gsap.timeline({
+  scrollTrigger: {
+    trigger: section_scale_how_we_work_about,
+    start: 'top bottom',
+    end: 'top+=80 top',
+    scrub: 1,
+    markers: false
+  }
+})
+.fromTo(".how_we_work_about",
+  { 
+    scale: 0.90,
+    borderRadius: "30px"
+  },
+  { 
+    scale: 1,
+    borderRadius: "0px",
+    ease: "power2.out",
+    duration: 2
+  }
+);
+}
+
+const section_scale_section_simply_work = document.querySelector('.section_simply_work');
+if (section_scale_section_simply_work) {
+gsap.timeline({
+  scrollTrigger: {
+    trigger: section_scale_section_simply_work,
+    start: 'top bottom',
+    end: 'top+=80 top',
+    scrub: 1,
+    markers: false
+  }
+})
+.fromTo(".section_simply_work",
+  { 
+    scale: 0.90,
+    borderRadius: "30px"
+  },
+  { 
+    scale: 1,
+    borderRadius: "0px",
+    ease: "power2.out",
+    duration: 2
+  }
+);
+}
+
 const section_scale3 = document.querySelector('.fearless_section');
 if (section_scale3) {
 gsap.timeline({
@@ -651,6 +776,7 @@ gsap.timeline({
   }
 );
 }
+
 
 
 

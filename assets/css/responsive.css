@@ -31,18 +31,21 @@
     .header_sub_nav_title_box {width: calc(100% - 75px);padding-left: 15px;}
     .search_icon_header{width: 18px;}
     
+    
 
        /*---footer---start---here---*/
     .footer_link{font-size: 14px;}
     .footer_colm:last-child .footer_link, .footer_title{font-size: 18px;}
     .footer_logo{width: 40%;}
 
-    .native_ai_partner{padding: 170px 0px 100px 0px;}
+    .native_ai_partner{padding: 160px 0px 100px 0px;}
     .subex_title_common{font-size: 30px;}
-    .subex_desc_title{font-size: 23px;}
+    .subex_desc_title{font-size: 22px;}
     .subex_desc{font-size: 18px;}
-    .native_ai_title_content{font-size: 17px;}
-    .native_ai_icon{width: 70px;}
+    .subex_desc_banner_h{font-size: 15px;}
+    .native_ai_title_content{font-size: 15px;}
+    .native_ai_icon{width: 60px;}
+    .native_video{width: 100%;}
    
 
 
@@ -51,6 +54,21 @@
     .global_shift_desc{font-size: 18px;line-height: 24px;}
     .global_shift_bottom_content p{font-size: 22px;}
     .global_shift_content_wrapper{bottom: 80px;}
+    .global_shift .subex_desc_title{font-size: 20px;}
+    .global_shift_inner_title{font-size: 21px;}
+    .global_shift_desc {font-size: 16px;line-height: 22px;}
+    .global_shift_bg{width: 96%;}
+
+
+     /*----fearless---home---start---here---*/
+    .desc_title_new{font-size: 20px;}
+    .desc_title_thin, .fearless_card_desc, .global_shift_desc{font-size: 15px;}
+    .fearless_card_title{font-size: 20px;}
+
+
+    /*---seamless--start---here---*/
+    .samless_section{padding: 150px 0px;}
+
 
     /*---expectations---start---here---*/
     .expectations_card_inner_title{font-size: 23px;}
@@ -99,6 +117,14 @@
 
     .title_managment{font-size: 18px;}
     .trusted_power_inner_card{height: 230px;}
+
+    .brand_core_desc{width: 88%;}
+
+    .desc_box_simply_box{width: 490px;} 
+.desc_box_simply_box .dec_common{font-size: 22px;}
+.content_simply_work .subex_title_common{font-size: 35px;}
+
+.live_text{font-size: 12px;}
     
 
 
@@ -112,6 +138,10 @@
 
     .footer_link{font-size: 16px;}
     .one_line_card_wrapper{width: 85%;}
+
+    .native_ai_partner{padding-top: 140px;}
+    .native_video{width: 99%;}
+    .global_shift_bg{width: 100%;}
 }
 
 @media screen and (max-width: 1199px){
@@ -209,7 +239,8 @@
           border: 1px solid var(--brandborder);
 }
 .header_wrapper  .fixed-header .menu_toggle_btn svg.menu_close_icon path, .header_wrapper  .menu_toggle_btn svg.menu_close_icon path{fill: var(--brandborder);}
-
+.active_menu_wrapper .header_wrapper{border-radius: 0px;}
+.active_menu_wrapper .header_wrapper:after{display: none;}
 
 
 
@@ -252,7 +283,7 @@
 .product_wrapper2 .solution_right_colm{padding-left: 0px;}
 .product_ul2{padding-top: 20px;}
 
-
+.native_video{object-fit: cover;}
 
 /*---header2---end---here--*/
 
@@ -268,6 +299,7 @@
 .solution_right_colm{width: 100%;}
 
 .headermenu_tab_menu_list ul{white-space: nowrap;overflow: auto;scrollbar-width: none;}
+.home_top_video_box{right: -10px;}
 
 
 
@@ -283,6 +315,17 @@
 .global_shift_content_wrapper{position: static;position: relative; z-index: 2;bottom: initial;padding: 80px 0px;}
 .global_shift_bg{position: absolute;top: 0px;left: 0px;bottom: 0px;height: 100%;right: 0px;object-fit: cover;object-position: top left;}
 .global_shift:after{content: '';position: absolute;top: 0px;left: 0px;right: 0px;bottom: 0px;background: rgb(0 0 0 / 50%);}
+
+.global_colm{width: 100%;}
+.global_row{flex-wrap: wrap;}
+.global_row .global_colm:nth-of-type(2){width: 100%;order: 1;}
+.global_row .global_colm:nth-of-type(1){order: 2;margin-top: 30px;}
+
+
+/*----fearless---home---start---here---*/
+.fearless_home_logo{width: 31%;}
+.fearless_home_content_wrapper{width: 85%;}
+
 
 /*---expectations---start---here---*/
 .expectations_card{display: block;}
@@ -346,10 +389,23 @@
 
     /*---global---shift---start---here---*/
     .global_shift_title_box{width: 100%;}
+    .title_wrapper_home .desc_title_new{width: 100%;}
+    .title_wrapper_home .desc_title_thin{width: 100%;}
+
+    /*----fearless---home---start---here---*/
+.fearless_home_logo{display: none;}
+.fearless_home_content_wrapper{width: 100%;}
+
+ /*---fraud---home---start---here---*/
+ .fraud_home_content_wrapper{width: 100%;}
+ .fraud_home_bg{display: none;}
+ .fraud_home_title_wrapper .desc_title_thin{width: 100%;}
 
      /*---expectations---start---here---*/
     .content_wrapper_expectations{width: 100%;}
     .expectations_bg{display: none;}
+    
+    
 
     /*---trusted---power---start---here---*/
     .trusted_power_row .trusted_power_colm:first-child{width: 100%;}
@@ -391,6 +447,10 @@
 .tab-menu-list ul li{width: 40%;}
 
 .new_journey_wrrapper2{width:100%;}
+
+.vision_colmnew{width: 100%;}
+.vision_desc_box{width: 100%;}
+.about_pcc_video_box{margin-top: 30px;}
 
 
 }
@@ -447,6 +507,14 @@
   .link_about_dropdowen{width: 100%;}
 
 
+  .home_top_video_box {
+    top: initial;
+    height: initial;
+    bottom: 123px;
+    right: -12px;
+}
+
+
 
 
 /*----footer---start---here---*/
@@ -469,6 +537,11 @@ footer{padding-top: 25px;}
 .native_ai_partner_bg{object-fit: contain;}
 .subex_desc_banner_h span{display: inline;}
 
+.quick-list-card{width: 100%;margin-top: 25px;}
+.quick-access-list-wrapper{margin: 0px;}
+.quick-list-card{padding: 0px;}
+.banner-subex{padding: 120px 0px 50px 0px;}
+
 
 /*---global---shift---start---here---*/
 .global_shift_colm{width: 100%;margin-top: 30px;}
@@ -477,6 +550,28 @@ footer{padding-top: 25px;}
 .global_shift_bottom_content p{font-size: 18px;}
 .global_shift_bottom_content{margin-top: 30px;}
 .global_shift_bg{object-position: initial;}
+.global_shift_inner_colm{padding: 20px 15px;}
+.global_shift_bottom_content{margin-top: 0px;}
+
+/*---global---shift---start---here---*/
+.fearless_home_colm{width: 100%;margin-top: 20px;}
+.fearless_home_colm:after{display: none;}
+.fearless_home_inner_card{padding-right: 0px;}
+.row_fearless_home{margin-top: 15px;}
+
+/*---seamless--start---here---*/
+.samless_section{padding: 50px 0px;}
+.title_wrapper_sameless{width: 100%;}
+.seamless_colm{width: 100%;margin-top: 20px;}
+.seamless_row{margin-top: 20px;}
+.samless_section{background: #000;}
+.semless_bg{opacity: 0.5;}
+
+   /*----fearless---home---start---here---*/
+.fraud_home_title_wrapper .desc_title_new{display: inline;}
+.fraud_home_title_wrapper .anim_parrent_selector_each, .fraud_home_title_wrapper .anim_parrent_each{display: inline;}
+.fraud_home_colm_box{width: 100%;}
+.fraud_homes_row_wrapper{margin-top: 0px;}
 
 /*---subex---role--start---here---*/
 .subex_role_colm{width: 100%;}
@@ -494,6 +589,8 @@ footer{padding-top: 25px;}
 .tab_solution_right_content{margin-top: 0px;}
 .tab_solution_icon{width: 100px;}
 .tab_solution_content{padding-bottom: 80px;}
+
+.about_banner_content{background: none;       backdrop-filter: initial;}
 
  /*---trusted---power---start---here---*/
  .trusted_power_icon{position: static;transform: none !important;width: 80px !important;margin: 0px auto;margin-bottom: 20px;}
@@ -520,7 +617,7 @@ footer{padding-top: 25px;}
   }
   .about_banner_content_wrapper{position: static;transform: none;background: rgb(255 229 206);padding: 50px 0px;}
    .about_us_banner .text_white{color: #000;}
-
+.native_video{object-fit: contain;height: initial;top: initial;bottom: 100px;}
 
    .about_banner_content{margin-top: 0px;}
    .video_box_about:after{    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 22%, rgba(0, 0, 0, 0.0) 45%), 
@@ -572,6 +669,24 @@ footer{padding-top: 25px;}
     .vision_colmnew{width: 100%;}
     .about_pcc_video_box{margin-top: 30px;}
     .video_thumbnail_subex_proton img, .video_wrapper_subex_proton video{height: 250px;}
+
+    .brand_core_img{height: 550px;object-fit: cover;opacity: 0.5;}
+    .brand_core{background: #000;}
+    .brand_core_desc{width: 100%;}
+
+    .how_we_work_about_content{width: 100%;}
+    .how_we_work_about_content .small_title_common, .how_we_work_about_content .subex_title_common {
+    padding-left: 0px;}
+    .how_we_work_about{background: #ccc;}
+    .how_we_work_bg{opacity: 0.2;}
+
+    .simpli_work_img{height: 650px;object-fit: cover;}
+    .how_we_work_about_card{padding: 20px;}
+    .content_simply_work .subex_title_common{font-size: 29px;}
+    .desc_box_simply_box .dec_common {
+        font-size: 16px;
+    }
+    .desc_box_simply_box{width: 100%;}
 
 }
 
